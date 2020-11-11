@@ -1,0 +1,53 @@
+.chevron-down {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    left: 10px;
+    top: 8px;
+}
+.chevron-down::after {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    transform: rotate(45deg);
+}
+.chevron-down.rotate {
+    top: 13px;
+}
+.chevron-down.rotate::after {
+    transform: rotate(225deg);
+}
+.chevron-down:hover {
+    cursor: pointer;
+}
+
+/* hamburger-icom */
+.hamburger-btn {
+    width: 23px;
+    height: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.hamburger-btn > span {
+    width: 100%;
+    height: 2px;
+    background-color: var(--light);
+}
+
+@media screen and (max-width: 830px) and (min-width: 320px) {
+    .hamburger-btn {
+        visibility: visible;
+    }
+}

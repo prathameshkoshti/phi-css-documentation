@@ -1,0 +1,35 @@
+.docsSidebar {
+    position: fixed;
+    overflow-y: auto;
+    padding: var(--rem-mul-phi) 0;
+    margin-right: -999px;
+    padding-right: 999px;
+    background-color: ghostwhite;
+    background-color: var(--light);
+    /* border-left: 1px solid; */
+    /* border-color: var(--light); */
+    height: 100vh;
+}
+
+.docsLinks {
+    list-style-type: none;
+}
+
+.docsLinks a {
+    text-decoration: none;
+}
+
+.docsLink {
+    margin-bottom: 1rem;
+}
+
+.downArrow {
+    position: relative;
+    top: -5px;
+    left: 5px;
+}
+
+.docsSubLinks {
+    list-style: none;
+    margin: var(--rem-div-phi) 0;
+}

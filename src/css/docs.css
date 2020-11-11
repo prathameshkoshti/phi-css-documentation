@@ -1,0 +1,141 @@
+body {
+    min-height: 100vh;
+}
+
+.content {
+    position: relative;
+}
+
+nav {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0 var(--rem-mul-phi);
+    position: fixed;
+    width: 100vw;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-item {
+    color: inherit;
+    justify-content: flex-end;
+    text-decoration: none;
+    padding: 1rem var(--rem-mul-phi);
+}
+
+.nav-links-container {
+
+}
+
+.docs-contianer {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 60px;
+    position: relative;
+}
+
+.docs-contianer > article {
+    flex: 1 1 0;
+    padding: var(--rem-mul-phi) 0;
+}
+
+.docs-sidebar-container {
+    height: 100vh;
+}
+
+.nav-footer {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    padding: var(--rem-div-phi) var(--rem-mul-phi) ;
+    bottom: 0;
+    background-color: var(--dark);
+    color: var(--light);
+    font-size: var(--rem-div-phi);
+    display: flex;
+}
+
+.mobile-viewable {
+    display: none;
+}
+
+@media screen and (max-width: 1990px) {
+    .docs-sidebar-container {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (min-width: 1340px) {
+    .docs-contianer {
+        max-width: 1260px;
+    }
+}
+
+@media screen and (max-width: 1340px) and (min-width: 600px) {
+    .docs-sidebar-container {
+        margin-left: 80px;
+        flex: 0 0 200px;
+    }
+
+    .docs-contianer {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .docs-sidebar-container {
+        flex: 0 0 300px;
+    }
+}
+
+@media screen and (max-width: 830px) and (min-width: 320px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100vw;
+        height: calc(100vh - 60px);
+        background-color: var(--light);
+        color: var(--dark);
+        align-items: flex-end;
+        font-size: 2rem;
+        display: none;
+    }
+
+    .nav-footer {
+        font-size: 1rem;
+        align-self: flex-start;
+        padding: var(--rem-div-phi) var(--rem-mul-phi);
+        position: fixed;
+        bottom: 0;
+    }
+
+    .docs-sidebar-container {
+        margin-left: 0px;
+    }
+
+    .docs-contianer > article {
+        padding: var(--rem-div-phi);
+    }
+
+    .mobile-viewable {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    .nav-links {
+        display: block !important;
+    }
+}

@@ -5,9 +5,15 @@ export default class NavItem extends Component {
     render() {
         return (
             <Link href={this.props.link}>
-                <a className="nav-item">
-                    {this.props.name}
-                </a>
+                {
+                    this.props.type === 'logo' ? (
+                        <a className="nav-logo">
+                            <img height="60px" src="/header-logo.svg" />
+                        </a>) : (
+                        <a className="nav-item" target={this.props.openInNewTab ? '_blank' : ''}>
+                            {this.props.name}
+                        </a>)
+                }
             </Link>
         )
     }
