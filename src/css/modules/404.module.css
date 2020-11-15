@@ -1,0 +1,30 @@
+.container404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+    background-color: var(--light);
+    position: relative;
+    top: 60px;
+}
+
+.container404 > h1 {
+    margin-bottom: 0;
+    color: var(--light);
+    font-weight: normal;
+    text-shadow: 1px 1px var(--dark),
+                2px 2px var(--dark),
+                3px 3px var(--dark),
+                4px 4px var(--dark),
+                5px 5px var(--dark),
+                6px 6px var(--dark),
+                7px 7px var(--dark),
+                8px 8px var(--dark),
+                9px 9px var(--dark),
+                10px 10px var(--dark);
+}
+
+.container404 > h1, .container404 > div {
+    text-align: center;
+}
