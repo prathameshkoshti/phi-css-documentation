@@ -5,7 +5,10 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css */
  * Based on https://github.com/chriskempson/tomorrow-theme
  * @author Rose Pritchard
  */
-
+:root {
+	--magenta: #ff5470;
+	--dark-blue: #00214d;
+}
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #ccc;
@@ -137,15 +140,27 @@ pre > code {
 	position: relative;
 }
 
-.code-block-footer {
-	background: #ff5470;
+.code-block-copy {
+	color: var(--magenta);
 	border-radius: 5px;
 	font-size: 0.8em;
 	padding: 0 5px;
 	display: inline-block;
-	color: #00214d;
+	background-color: var(--dark-blue);
+	border: 1px solid var(--magenta);
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
-	pointer-events: none;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.code-block-copy:hover {
+	color: var(--dark-blue);
+	background-color: var(--magenta);
+}
+
+.code-block-copy.copied {
+	color: var(--dark-blue);
+	background-color: var(--magenta);
 }
