@@ -8,10 +8,10 @@ export default class NavItem extends Component {
                 {
                     this.props.type === 'logo' ? (
                         <a className="nav-logo">
-                            <img height="60px" src="/header-logo.svg" />
+                            <img height="60px" src="/icons/header-logo.svg" />
                         </a>) : (
                         <a className="nav-item" target={this.props.openInNewTab ? '_blank' : ''}>
-                            {this.props.name}
+                            {this.props.title}
                         </a>)
                 }
             </Link>

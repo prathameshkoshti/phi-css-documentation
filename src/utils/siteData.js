@@ -1,27 +1,27 @@
 export const navItems = [
     {
-        name: 'Home',
-        href: '/',
+        title: 'Home',
+        link: '/',
         openInNewTab: false,
     },
     {
-        name: 'Docs',
-        href: '/docs',
+        title: 'Docs',
+        link: '/docs',
         openInNewTab: false,
     },
     {
-        name: 'Examples',
-        href: '/examples',
+        title: 'Examples',
+        link: '/examples',
         openInNewTab: false,
     },
     {
-        name: 'Repo',
-        href: 'https://github.com/phi-css/phi-css',
+        title: 'Repo',
+        link: 'https://github.com/phi-css/phi-css',
         openInNewTab: true,
     },
     {
-        name: 'Releases',
-        href: 'https://github.com/phi-css/phi-css/releases',
+        title: 'Releases',
+        link: 'https://github.com/phi-css/phi-css/releases',
         openInNewTab: true,
     }
 ]
@@ -29,64 +29,59 @@ export const navItems = [
 export const docsLinks = [
     {
         id: 'inception',
-        name: 'Inception',
-        href: 'inception',
+        title: 'Inception',
+        link: 'inception',
     },
     {
         id: 'installation',
-        name: 'Installation',
-        href: 'installation',
+        title: 'Installation',
+        link: 'installation',
     },
     {
         id: 'base',
-        name: 'Base',
-        href: 'base',
+        title: 'Base',
+        link: 'base',
     },
     {
-        id: 'grids',
-        name: 'Grids',
-        href: 'grids',
+        id: 'grid',
+        title: 'Grids',
+        link: 'grid',
     },
     {
         id: 'typography',
-        name: 'Typography',
-        href: 'typography',
-    },
-    {
-        id: 'dark_mode',
-        name: 'Dark mode',
-        href: 'dark_mode',
+        title: 'Typography',
+        link: 'typography',
     },
     {
         id: 'components',
-        name: 'Components',
-        href: 'components',
+        title: 'Components',
+        link: 'components',
         subLinks: [
             {
                 id: 'form_components',
-                name: 'Form components',
-                href: 'form_components'
+                title: 'Form components',
+                link: 'form_components'
             },
             {
                 id: 'tables',
-                name: 'Tables',
-                href: 'tables'
+                title: 'Tables',
+                link: 'tables'
             },
-            // {
-            //     id: 'labels',
-            //     name: 'Labels',
-            //     href: 'labels'
-            // }
         ]
     },
     {
         id: 'utilities',
-        name: 'Utilities',
-        href: 'utilities',
+        title: 'Utilities',
+        link: 'utilities',
     },
     {
-        id: 'customize',
-        name: 'Customizations',
-        href: 'customizations',
+        id: 'dark_mode',
+        title: 'Dark mode',
+        link: 'dark_mode',
+    },
+    {
+        id: 'customizations',
+        title: 'Customizations',
+        link: 'customizations',
     }
 ]

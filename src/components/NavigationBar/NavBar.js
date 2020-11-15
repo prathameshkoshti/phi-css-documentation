@@ -41,10 +41,15 @@ export default class NavBar extends Component {
                     </div>
                     <div className="nav-links" style={navMenuStyle}>
                     {
-                        navItems.map(navItem => <NavItem name={navItem.name} link={navItem.href} key={navItem.name} type="link" openInNewTab={navItem.openInNewTab} />)
+                        navItems.map(navItem => <NavItem title={navItem.title} link={navItem.link} key={navItem.title} type="link" openInNewTab={navItem.openInNewTab} />)
                     }
-                        <div className="mobile-viewable">
-                            
+                        <div className="nav-icons">
+                            <div className="nav-icon">
+                                <img src="/icons/npm.svg" width="100%"/>
+                            </div>
+                            <div className="nav-icon">
+                                <img src="/icons/github.svg" width="85%"/>
+                            </div>
                         </div>
                         <span className='nav-footer mobile-viewable'>
                             Made with 💜

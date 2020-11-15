@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Link from 'next/link';
-import docsSidebarStyle from '../../css/docs-sidebar.module.css';
+import docsSidebarStyle from '../../css/modules/docs-sidebar.module.css';
 
 export default class DocsItem extends Component {
     constructor(props) {
@@ -67,9 +67,9 @@ export default class DocsItem extends Component {
         return (
             <li className={docsSidebarStyle.docsLink}>
                 <div className="flex" onClick={(e) => this.handleDropdown(e) }>
-                    <Link href={this.props.subLinks ? '' : `/docs/${this.props.href}`}>
+                    <Link href={this.props.subLinks ? '' : `/docs/${this.props.link}`}>
                         <a>
-                            <span className="docs-link">{this.props.name}</span>
+                            <span className="docs-link">{this.props.title}</span>
                         </a>
                     </Link>
                     {this.props.subLinks ? <i className={this.state.downArrowClass} icon-role="chevron-down" /> : ''}
@@ -81,9 +81,9 @@ export default class DocsItem extends Component {
                                 <ul className={docsSidebarStyle.docsSubLinks}>
                                     {this.props.subLinks.map(subLink => {
                                         return (
-                                            <Link key={subLink.id} href={`/docs/components/${subLink.href}`}>
+                                            <Link key={subLink.id} href={`/docs/components/${subLink.link}`}>
                                                 <a>
-                                                    <li>{subLink.name}</li>
+                                                    <li>{subLink.title}</li>
                                                 </a>
                                             </Link>
                                         )
