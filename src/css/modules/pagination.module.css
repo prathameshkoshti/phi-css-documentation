@@ -1,0 +1,30 @@
+.paginationContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--rem-mul-phi) 0;
+}
+
+.paginationNext, .paginationPrev, .allJumpPoints {
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    text-decoration: none;
+}
+
+.paginationNext {
+    align-items: flex-end;
+}
+
+.arrowLink {
+    display: flex;
+    align-items: center;
+}
+
+.paginationLabel {
+    margin: 0 10px;
+}
+
+.paginationNextPageTitle {
+    text-align: right;
+}

@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import 'phi-css/dist/phi.min.css';
 import '../css/docs.css';
 import '../css/icons.css';
+import "../css/prism.css";
 
 function MyApp({ Component, pageProps }) {
   return (
