@@ -6,7 +6,7 @@ export const navItems = [
     },
     {
         title: 'Docs',
-        link: '/docs',
+        link: '/docs/inception',
         openInNewTab: false,
     },
     {
