@@ -82,6 +82,14 @@ export default class Pagination extends Component {
             }
         }
 
+        if (isObjectEmpty(nextPageObject)) {
+            nextPageObject = {
+                id: 'examples',
+                title: 'Examples',
+                link: 'examples',
+            }
+        }
+
         this.setState({
             nextPageObject,
             prevPageObject
