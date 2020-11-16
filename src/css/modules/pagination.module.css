@@ -25,6 +25,10 @@
     margin: 0 10px;
 }
 
-.paginationNextPageTitle {
+.paginationNext > h5 {
     text-align: right;
+}
+
+.paginationNextPageTitle:hover {
+    border-bottom: 1px dotted #000;
 }

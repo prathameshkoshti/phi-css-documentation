@@ -101,7 +101,7 @@ export default class Pagination extends Component {
             <div className={paginationStyles.paginationContainer}>
                 <div>
                 {
-                isObjectEmpty(this.state.prevPageObject) ? 
+                isObjectEmpty(this.state.prevPageObject) ?
                     '' :
                         <Link href={`/docs/${this.state.prevPageObject.link}`}>
                             <a className={paginationStyles.paginationPrev}>
@@ -109,14 +109,14 @@ export default class Pagination extends Component {
                                     <img src="/icons/prev.svg" width="20px" />
                                     <small className={paginationStyles.paginationLabel}>prev</small>
                                 </div>
-                                <h5>{this.state.prevPageObject.title}</h5>
+                                <h5 className={paginationStyles.paginationNextPageTitle}>{this.state.prevPageObject.title}</h5>
                             </a>
                         </Link>
                 }
                 </div>
                 <div>
                 {
-                isObjectEmpty(this.state.nextPageObject) ? 
+                isObjectEmpty(this.state.nextPageObject) ?
                     '' :
                         <Link href={`/docs/${this.state.nextPageObject.link}`}>
                             <a className={paginationStyles.paginationNext}>
@@ -133,4 +133,3 @@ export default class Pagination extends Component {
         )
     }
 }
-
