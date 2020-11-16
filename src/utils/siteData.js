@@ -1,3 +1,7 @@
+export const npmLink = 'https://www.npmjs.com/package/phi-css';
+export const githubLink = 'https://github.com/phi-css/phi-css';
+export const githubReleaseLink = 'https://github.com/phi-css/phi-css/releases';
+
 export const navItems = [
     {
         title: 'Home',
@@ -16,12 +20,12 @@ export const navItems = [
     },
     {
         title: 'Repo',
-        link: 'https://github.com/phi-css/phi-css',
+        link: githubLink,
         openInNewTab: true,
     },
     {
         title: 'Releases',
-        link: 'https://github.com/phi-css/phi-css/releases',
+        link: githubReleaseLink,
         openInNewTab: true,
     }
 ]

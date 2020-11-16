@@ -48,7 +48,7 @@ export default class NavBar extends Component {
                                 <img src="/icons/npm.svg" width="100%"/>
                             </div>
                             <div className="nav-icon">
-                                <img src="/icons/github.svg" width="85%"/>
+                                <img src="/icons/github.svg" width="85%" height="85%"/>
                             </div>
                         </div>
                         <span className='nav-footer mobile-viewable'>

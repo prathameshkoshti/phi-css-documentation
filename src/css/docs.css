@@ -66,6 +66,23 @@ footer {
     height: 40px;
 }
 
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert(1);
+}
+
+.footer-icon {
+    width: 25px;
+    height: 25px;
+    color: var(--light);
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-icons {
     display: none;
 }
