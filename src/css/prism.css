@@ -54,6 +54,10 @@ pre[class*="language-"] {
 	white-space: normal;
 }
 
+.token {
+	font-family: 'Fira Code', monospace;
+}
+
 .token.comment,
 .token.block-comment,
 .token.prolog,
@@ -160,7 +164,19 @@ pre > code {
 	background-color: var(--magenta);
 }
 
-.code-block-copy.copied {
-	color: var(--dark-blue);
-	background-color: var(--magenta);
+.code-block-contianer {
+	display: flex;
+	flex-direction: column;
+}
+
+.code-block.with-output > pre[class*="language-"] {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.code-block.with-output + .code-output {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: var(--rem-mul-phi) var(--rem-div-phi);
+	border: 1px solid var(--disabled-light);
 }

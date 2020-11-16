@@ -2,7 +2,7 @@ import React from 'react';
 import DocsSidebar from '../../components/DocsSidebar/DocsSidebar';
 import Pagination from '../../components/Pagination';
 import PrismCodeBlock from '../../components/PrismCodeBlock';
-import { sampleCode } from '../../utils/codeBlocks';
+import { sampleHTMLCode } from '../../utils/codeBlocks';
 
 export default function dark_mode() {
     return (
@@ -13,7 +13,7 @@ export default function dark_mode() {
                     <p>
     
                     </p>
-                    <PrismCodeBlock language="css" code={sampleCode} />
+                    <PrismCodeBlock codeBlock={sampleHTMLCode} />
                 </article>
                 <Pagination currentPageId="dark_mode" />
             </div>

@@ -13,7 +13,7 @@ export default function tables() {
                     <p>
     
                     </p>
-                    <PrismCodeBlock language="css" code={sampleCode} />
+                    <PrismCodeBlock codeBlock={sampleCode} />
                 </article>
                 <Pagination currentPageId="tables" parentPageId="components" />
             </div>

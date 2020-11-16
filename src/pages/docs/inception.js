@@ -13,7 +13,7 @@ export default function inception() {
                     <p>
     
                     </p>
-                    <PrismCodeBlock language="css" code={sampleCode} />
+                    <PrismCodeBlock codeBlock={sampleCode} />
                 </article>
                 <Pagination currentPageId="inception" />
             </div>

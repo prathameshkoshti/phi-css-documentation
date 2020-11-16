@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Prism from "prismjs";
 
 export default class PrismCodeBlock extends Component {
@@ -6,45 +7,64 @@ export default class PrismCodeBlock extends Component {
         super(props);
         this.state = {
             language: this.props.language,
-            code: this.props.code,
+            codeBlock: this.props.codeBlock,
+            copyText: 'Copy',
         }
 
-        this.handleCopyButton = this.handleCopyButton.bind(this);
+        this.onCopy = this.onCopy.bind(this);
     }
 
-    handleCopyButton(event) {
-        const target = event.currentTarget;
-
+    onCopy(target) {
         // Copy text
-        navigator.clipboard.writeText(this.props.code);
-        this.updateText(target, 'Copied');
-        target.classList.add('copied');
-
+        this.updateText('Copied');
+    
         setTimeout(() => {
-            this.updateText(target, 'Copy');
-            target.classList.remove('copied');
+            this.updateText('Copy');
         }, 2000);
     }
 
-    updateText(target, value) {
-        target.innerText = value;
+    updateText(value) {
+        this.setState({ copyText: value });
     }
 
     componentDidMount() {
         Prism.highlightAll();
     }
- 
+
+
     render() {
+        function createMarkup(code) {
+            return {__html: code};
+        }
+
+        let className = 'code-block';
+        let output = '';
+        if (this.state.codeBlock.isOutputVisible) {
+            className += ' with-output';
+            output = "" + this.state.codeBlock.code;
+        }
         return (
-            <div className="code-block">
-                <pre>
-                    <code className={`language-${this.state.language}`}>
-                        {this.state.code}
-                    </code>
-                </pre>
-                <div onClick={(event) => this.handleCopyButton(event)} className="code-block-copy">
-                    Copy
+            <div className="code-block-contianer">
+                <div className={className}>
+                    <pre>
+                        <code className={`language-${this.state.codeBlock.language}`}>
+                            {this.state.codeBlock.code}
+                        </code>
+                    </pre>
+                    <CopyToClipboard
+                        onCopy={this.onCopy}
+                        text={this.state.codeBlock.code}>
+                        <div onClick={this.onCopy} className="code-block-copy">
+                            {this.state.copyText}
+                        </div>
+                    </CopyToClipboard>
                 </div>
+                {
+                    this.state.codeBlock.isOutputVisible ? 
+                    <div className="code-output" dangerouslySetInnerHTML={createMarkup(this.state.codeBlock.code)}>
+                    </div>  
+                    : ''
+                }
             </div>
         )
     }

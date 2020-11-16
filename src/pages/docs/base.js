@@ -13,7 +13,7 @@ export default function base() {
                     <p>
     
                     </p>
-                    <PrismCodeBlock language="css" code={sampleCode} />
+                    <PrismCodeBlock codeBlock={sampleCode} />
                 </article>
                 <Pagination currentPageId="base" />
             </div>

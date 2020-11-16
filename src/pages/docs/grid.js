@@ -14,7 +14,7 @@ export default function grid() {
                     <p>
     
                     </p>
-                    <PrismCodeBlock language="css" code={sampleCode} />
+                    <PrismCodeBlock codeBlock={sampleCode} />
                 </article>
                 <Pagination currentPageId="grid" />
             </div>

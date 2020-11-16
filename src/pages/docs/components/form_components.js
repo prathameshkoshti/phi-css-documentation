@@ -13,7 +13,7 @@ export default function form_components() {
                     <p>
     
                     </p>
-                    <PrismCodeBlock language="css" code={sampleCode} />
+                    <PrismCodeBlock codeBlock={sampleCode} />
                 </article>
                 <Pagination currentPageId="form_components" parentPageId="components" />
             </div>
