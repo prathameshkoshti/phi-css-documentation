@@ -10,6 +10,7 @@
 }
 
 .container404 > h1 {
+    letter-spacing: 5px;
     margin-bottom: 0;
     color: var(--light);
     font-weight: normal;
