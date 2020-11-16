@@ -9,6 +9,7 @@ export default class PrismCodeBlock extends Component {
             language: this.props.language,
             codeBlock: this.props.codeBlock,
             copyText: 'Copy',
+            copied: false,
         }
 
         this.onCopy = this.onCopy.bind(this);
@@ -17,10 +18,16 @@ export default class PrismCodeBlock extends Component {
     onCopy(target) {
         // Copy text
         this.updateText('Copied');
+        this.setState({
+            copied: true,
+        })
     
         setTimeout(() => {
+            this.setState({
+                copied: false,
+            })
             this.updateText('Copy');
-        }, 2000);
+        }, 3000);
     }
 
     updateText(value) {
@@ -33,6 +40,20 @@ export default class PrismCodeBlock extends Component {
 
 
     render() {
+        const copiedStyle = {
+            color: 'var(--dark-blue)',
+	        backgroundColor: 'var(--magenta)'
+        }
+
+        let style = {}
+
+        if(this.state.copied) {
+            style = copiedStyle
+        }
+        else {
+            style = {};
+        }
+        
         function createMarkup(code) {
             return {__html: code};
         }
@@ -54,7 +75,7 @@ export default class PrismCodeBlock extends Component {
                     <CopyToClipboard
                         onCopy={this.onCopy}
                         text={this.state.codeBlock.code}>
-                        <div onClick={this.onCopy} className="code-block-copy">
+                        <div onClick={this.onCopy} className="code-block-copy" style={style}>
                             {this.state.copyText}
                         </div>
                     </CopyToClipboard>

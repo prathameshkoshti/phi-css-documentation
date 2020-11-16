@@ -164,6 +164,11 @@ pre > code {
 	background-color: var(--magenta);
 }
 
+.code-block-copy.copied {
+	color: var(--dark-blue);
+	background-color: var(--magenta);
+}
+
 .code-block-contianer {
 	display: flex;
 	flex-direction: column;
