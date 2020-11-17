@@ -109,7 +109,7 @@ export default class Pagination extends Component {
                                     <img src="/icons/prev.svg" width="20px" />
                                     <small className={paginationStyles.paginationLabel}>prev</small>
                                 </div>
-                                <h5 className={paginationStyles.paginationNextPageTitle}>{this.state.prevPageObject.title}</h5>
+                                <h5 className={paginationStyles.paginationTitle}>{this.state.prevPageObject.title}</h5>
                             </a>
                         </Link>
                 }
@@ -124,7 +124,7 @@ export default class Pagination extends Component {
                                     <small className={paginationStyles.paginationLabel}>next</small>
                                     <img src="/icons/next.svg" width="20px" />
                                 </div>
-                                <h5 className={paginationStyles.paginationNextPageTitle}>{this.state.nextPageObject.title}</h5>
+                                <h5 className={`${paginationStyles.paginationNextPageTitle} ${paginationStyles.paginationTitle}`}>{this.state.nextPageObject.title}</h5>
                             </a>
                         </Link>
                 }

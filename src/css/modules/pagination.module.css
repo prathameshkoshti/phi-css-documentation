@@ -29,6 +29,13 @@
     text-align: right;
 }
 
-.paginationNextPageTitle:hover {
-    border-bottom: 1px dotted #000;
+.paginationTitle {
+    display: inline-block;
+    width: auto;
+}
+.paginationTitle:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--accent);
+    text-underline-position: under;
 }

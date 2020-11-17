@@ -17,7 +17,7 @@ export default class NavBar extends Component {
             navMenuOpened: !this.state.navMenuOpened,
         })
     }
-    
+
     render() {
         let navMenuStyle = {};
         if (this.state.navMenuOpened) {
@@ -51,9 +51,9 @@ export default class NavBar extends Component {
                                 <img src="/icons/github.svg" width="85%" height="85%"/>
                             </div>
                         </div>
-                        <span className='nav-footer mobile-viewable'>
-                            Made with 💜
-                        </span>
+                        <small className='nav-footer mobile-viewable'>
+                            Made with 💜 &nbsp;uisng SASS.
+                        </small>
                     </div>
                 </div>
             </nav>

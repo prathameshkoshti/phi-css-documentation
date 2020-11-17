@@ -17,6 +17,7 @@
 
 .docsLinks a {
     text-decoration: none;
+    color: var(--dark);
 }
 
 .docsLink {

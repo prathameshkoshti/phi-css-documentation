@@ -29,6 +29,7 @@ nav .nav-item {
     justify-content: flex-end;
     text-decoration: none;
     padding: 1rem var(--rem-mul-phi);
+    transition: var(--transition);
 }
 
 .container {
@@ -139,7 +140,6 @@ footer {
         color: var(--dark);
         align-items: flex-end;
         font-size: 2rem;
-        display: none;
     }
 
     .nav-footer {
@@ -166,11 +166,23 @@ footer {
         display: flex;
         position: fixed;
         bottom: 0;
+        right: 0;
     }
 }
 
 @media screen and (min-width: 830px) {
     .nav-links {
-        display: block !important;
+        display: flex !important;
+        height: 60px;
+    }
+
+    .nav-item:hover {
+        background: var(--accent);
+        color: var(--light);
+    }
+
+    .nav-item.active {
+        background: var(--accent-shade);
+        color: var(--accent-tint);
     }
 }
