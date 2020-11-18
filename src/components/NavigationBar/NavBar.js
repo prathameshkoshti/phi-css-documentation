@@ -12,6 +12,29 @@ export default class NavBar extends Component {
         this.handleNavMenu = this.handleNavMenu.bind(this);
     }
 
+    componentDidMount() {
+        const activeItem = this.getCurrentURLLocation();
+        this.setState({
+            currentActiveItem: activeItem
+        })
+        localStorage.setItem('activeNavItem', activeItem);
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        const newActiveItem = this.getCurrentURLLocation();
+
+        if(newActiveItem !== this.state.currentActiveItem) {
+            localStorage.setItem('activeNavItem', newActiveItem);
+            this.setState({
+                currentActiveItem: newActiveItem
+            });
+        }
+    }
+
+    getCurrentURLLocation() {
+        return location.pathname.substr(1).split('/')[0];
+    }
+
     handleNavMenu() {
         this.setState({
             navMenuOpened: !this.state.navMenuOpened,
@@ -41,7 +64,7 @@ export default class NavBar extends Component {
                     </div>
                     <div className="nav-links" style={navMenuStyle}>
                     {
-                        navItems.map(navItem => <NavItem title={navItem.title} link={navItem.link} key={navItem.title} type="link" openInNewTab={navItem.openInNewTab} />)
+                        navItems.map(navItem => <NavItem currentActiveItem={this.state.currentActiveItem} title={navItem.title} link={navItem.link} key={navItem.title} type="link" openInNewTab={navItem.openInNewTab} />)
                     }
                         <div className="nav-icons">
                             <div className="nav-icon">
