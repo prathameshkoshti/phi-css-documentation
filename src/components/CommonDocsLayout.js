@@ -6,9 +6,14 @@ export default class CommonDocsLayout extends Component {
     render() {
         return (
             <div className="docs-contianer">
+            <div className="page-header full-width">
+                <h3>{this.props.pageHeader}</h3>
+            </div>
             <div className="docs-content">
                 <article>
-                    {this.props.children}
+                    <div className="page-content">
+                        {this.props.children}
+                    </div>
                 </article>
                 <Pagination currentPageId={this.props.currentPageId} parentPageId={this.props.parentPageId} />
             </div>

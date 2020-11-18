@@ -5,8 +5,7 @@ import CommonDocsLayout from '../../../components/CommonDocsLayout';
 
 export default function tables() {
     return (
-        <CommonDocsLayout currentPageId="tables" parentPageId="components">
-            <h3>Tables</h3>
+        <CommonDocsLayout currentPageId="tables" parentPageId="components" pageHeader="Tables">
             <p>
 
             </p>

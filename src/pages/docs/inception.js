@@ -5,8 +5,7 @@ import CommonDocsLayout from '../../components/CommonDocsLayout';
 
 export default function inception() {
     return (
-        <CommonDocsLayout currentPageId="inception" >
-            <h3>Inception</h3>
+        <CommonDocsLayout currentPageId="inception" pageHeader="Inception">
             <p>
 
             </p>

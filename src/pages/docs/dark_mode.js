@@ -5,8 +5,7 @@ import CommonDocsLayout from '../../components/CommonDocsLayout';
 
 export default function dark_mode() {
     return (
-        <CommonDocsLayout currentPageId="dark_mode" >
-            <h3>Dark mode</h3>
+        <CommonDocsLayout currentPageId="dark_mode" pageHeader="Dark mode">
             <p>
 
             </p>

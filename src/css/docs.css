@@ -46,7 +46,23 @@ nav .nav-item {
 
 .docs-contianer > div.docs-content {
     flex: 1 1 0;
-    padding: var(--rem-mul-phi) 0;
+}
+
+.docs-content > article {
+    /* position: relative; */
+}
+
+.page-header {
+    position: absolute;
+    padding: 4rem 4rem 0;
+}
+
+.docs-content > article > .page-content {
+    padding: 10rem 0 0;
+}
+
+.page-header > h3 {
+    margin-top: 2rem;
 }
 
 .docs-sidebar-container {
@@ -111,6 +127,14 @@ footer {
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .page-header > h3 {
+        text-align: center;
+        position: relative;
+        left: -11rem
+    }
+}
+
 @media screen and (max-width: 1340px) and (min-width: 600px) {
     .docs-sidebar-container {
         margin-left: 80px;
@@ -168,6 +192,13 @@ footer {
         position: fixed;
         bottom: 0;
         right: 0;
+    }
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 320px) {
+    .page-header > h3 {
+        text-align: center;
     }
 }
 

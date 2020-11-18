@@ -5,8 +5,7 @@ import CommonDocsLayout from '../../components/CommonDocsLayout';
 
 export default function installation() {
     return (
-        <CommonDocsLayout currentPageId="installation" >
-            <h3>Installation</h3>
+        <CommonDocsLayout currentPageId="installation" pageHeader="Installation">
             <p>
 
             </p>

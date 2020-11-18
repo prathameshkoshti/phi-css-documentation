@@ -5,8 +5,7 @@ import { sampleCode } from '../../../utils/codeBlocks';
 
 export default function form_components() {
     return (
-        <CommonDocsLayout currentPageId="form_components" parentPageId="components">
-            <h3>Form components</h3>
+        <CommonDocsLayout currentPageId="form_components" parentPageId="components" pageHeader="Form components">
             <p>
 
             </p>

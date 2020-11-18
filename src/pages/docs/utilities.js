@@ -5,8 +5,7 @@ import CommonDocsLayout from '../../components/CommonDocsLayout';
 
 export default function utilities() {
     return (
-        <CommonDocsLayout currentPageId="utilities" >
-            <h3>Utilities</h3>
+        <CommonDocsLayout currentPageId="utilities" pageHeader="Utilities">
             <p>
 
             </p>

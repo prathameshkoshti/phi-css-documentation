@@ -5,8 +5,7 @@ import CommonDocsLayout from '../../components/CommonDocsLayout';
 
 export default function grid() {
     return (
-        <CommonDocsLayout currentPageId="grid" >
-            <h3>Grid</h3>
+        <CommonDocsLayout currentPageId="grid" pageHeader="Grid">
             <p>
 
             </p>

@@ -5,8 +5,7 @@ import CommonDocsLayout from '../../components/CommonDocsLayout';
 
 export default function customizations() {
     return (
-        <CommonDocsLayout currentPageId="customizations" >
-            <h3>Customizations</h3>
+        <CommonDocsLayout currentPageId="customizations" pageHeader="Customizations">
             <p>
 
             </p>

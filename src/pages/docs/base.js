@@ -5,8 +5,7 @@ import CommonDocsLayout from '../../components/CommonDocsLayout';
 
 export default function base() {
     return (
-        <CommonDocsLayout currentPageId="base" >
-            <h3>Base</h3>
+        <CommonDocsLayout currentPageId="base" pageHeader="Base">
             <p>
 
             </p>
