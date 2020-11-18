@@ -48,7 +48,7 @@ export const docsLinks = [
     },
     {
         id: 'grid',
-        title: 'Grids',
+        title: 'Grid',
         link: 'grid',
     },
     {
