@@ -1,26 +1,16 @@
-import React from 'react'
-import DocsSidebar from '../../components/DocsSidebar/DocsSidebar';
-import Pagination from '../../components/Pagination';
+import React from 'react';
 import PrismCodeBlock from '../../components/PrismCodeBlock';
 import { sampleCode } from '../../utils/codeBlocks';
+import CommonDocsLayout from '../../components/CommonDocsLayout';
 
 export default function typography() {
     return (
-        <div className="docs-contianer">
-            <div className="docs-content">
-                <article>
-                    <h3>Typography</h3>
-                    <p>
-    
-                    </p>
-                    <PrismCodeBlock codeBlock={sampleCode} />
-                </article>
-                <Pagination currentPageId="typography" />
+        <CommonDocsLayout currentPageId="typography" >
+            <h3>Typography</h3>
+            <p>
 
-            </div>
-            <div className="docs-sidebar-container">
-                <DocsSidebar />
-            </div>
-        </div>
+            </p>
+            <PrismCodeBlock codeBlock={sampleCode} />
+        </CommonDocsLayout>
     )
 }

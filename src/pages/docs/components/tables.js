@@ -1,25 +1,16 @@
 import React from 'react';
-import DocsSidebar from '../../../components/DocsSidebar/DocsSidebar';
-import Pagination from '../../../components/Pagination';
 import PrismCodeBlock from '../../../components/PrismCodeBlock';
 import { sampleCode } from '../../../utils/codeBlocks';
+import CommonDocsLayout from '../../../components/CommonDocsLayout';
 
 export default function tables() {
     return (
-        <div className="docs-contianer">
-            <div className="docs-content">
-                <article>
-                    <h3>Tables</h3>
-                    <p>
-    
-                    </p>
-                    <PrismCodeBlock codeBlock={sampleCode} />
-                </article>
-                <Pagination currentPageId="tables" parentPageId="components" />
-            </div>
-            <div className="docs-sidebar-container">
-                <DocsSidebar />
-            </div>
-        </div>
+        <CommonDocsLayout currentPageId="tables" parentPageId="components">
+            <h3>Tables</h3>
+            <p>
+
+            </p>
+            <PrismCodeBlock codeBlock={sampleCode} />
+        </CommonDocsLayout>
     )
 }
