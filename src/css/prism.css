@@ -183,5 +183,5 @@ pre > code {
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	padding: var(--rem-mul-phi) var(--rem-div-phi);
-	border: 1px solid var(--disabled-light);
+	border: 1px solid var(--disabled-tint);
 }

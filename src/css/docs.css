@@ -30,6 +30,7 @@ nav .nav-item {
     text-decoration: none;
     padding: 1rem var(--rem-mul-phi);
     transition: var(--transition);
+    line-height: 2rem;
 }
 
 .container {
