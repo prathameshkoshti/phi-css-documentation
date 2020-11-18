@@ -97,6 +97,13 @@ export default class Pagination extends Component {
     }
 
     render() {
+        let nextLink = this.state.nextPageObject.link;
+        if (this.state.nextPageObject && this.state.nextPageObject.link && this.state.nextPageObject.link.includes('examples')) {
+            nextLink = "/examples";
+        }
+        else {
+            nextLink = `/docs/${this.state.nextPageObject.link}`
+        }
         return (
             <div className={paginationStyles.paginationContainer}>
                 <div>
@@ -118,7 +125,7 @@ export default class Pagination extends Component {
                 {
                 isObjectEmpty(this.state.nextPageObject) ?
                     '' :
-                        <Link href={`/docs/${this.state.nextPageObject.link}`}>
+                        <Link href={nextLink}>
                             <a className={paginationStyles.paginationNext}>
                                 <div className={paginationStyles.arrowLink}>
                                     <small className={paginationStyles.paginationLabel}>next</small>

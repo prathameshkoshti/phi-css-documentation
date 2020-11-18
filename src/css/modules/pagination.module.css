@@ -33,9 +33,17 @@
     display: inline-block;
     width: auto;
 }
-.paginationTitle:hover {
+
+.paginationNext:hover,
+.paginationPrev:hover {
+    color: var(--dark);
+}
+
+.paginationNext:hover .paginationTitle,
+.paginationPrev:hover .paginationTitle {
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-color: var(--accent);
     text-underline-position: under;
+    color: var(--accent)
 }
