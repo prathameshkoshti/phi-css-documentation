@@ -5,6 +5,7 @@
     justify-content: center;
     height: calc(100vh - 100px);
     background-color: var(--light);
+    color: var(--accent-shade);
     position: relative;
     top: 60px;
 }
@@ -12,20 +13,36 @@
 .container404 > h1 {
     letter-spacing: 5px;
     margin-bottom: 0;
-    color: var(--light);
+    transform: translate(-12px, -12px);
+    color: var(--accent-tint);
     font-weight: normal;
-    text-shadow: 1px 1px var(--dark),
-                2px 2px var(--dark),
-                3px 3px var(--dark),
-                4px 4px var(--dark),
-                5px 5px var(--dark),
-                6px 6px var(--dark),
-                7px 7px var(--dark),
-                8px 8px var(--dark),
-                9px 9px var(--dark),
-                10px 10px var(--dark);
+    text-shadow: 1px 1px var(--accent),
+                2px 2px var(--accent),
+                3px 3px var(--accent),
+                4px 4px var(--accent),
+                5px 5px var(--accent),
+                6px 6px var(--accent),
+                7px 7px var(--accent-shade),
+                8px 8px var(--accent-shade),
+                9px 9px var(--accent-shade),
+                10px 10px var(--accent-shade),
+                11px 11px var(--accent-shade),
+                12px 12px var(--accent-shade);
 }
 
 .container404 > h1, .container404 > div {
     text-align: center;
+}
+
+.container404 a {
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+.container404 a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-underline-offset: 5rem;
+    text-decoration-style: wavy;
 }
