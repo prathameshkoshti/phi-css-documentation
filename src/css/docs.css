@@ -1,3 +1,8 @@
+::selection {
+    background: var(--accent);
+    color: var(--accent-tint);
+}
+
 body {
     color: var(--dark);
 }
@@ -63,6 +68,7 @@ nav .nav-item {
 
 .page-header > h3 {
     margin-top: 2rem;
+    margin-bottom: 0;
 }
 
 .docs-sidebar-container {
@@ -165,6 +171,12 @@ footer {
         color: var(--dark);
         align-items: flex-end;
         font-size: 2rem;
+    }
+
+    .nav-item {
+        background: transparent !important;
+        font-weight: normal !important;
+        color: var(--dark) !important
     }
 
     .nav-footer {
