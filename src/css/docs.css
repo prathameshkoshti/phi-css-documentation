@@ -50,11 +50,13 @@ nav .nav-item {
 }
 
 .docs-contianer > div.docs-content {
-    flex: 1 1 0;
+    min-width: 320px;
+    max-width: 800px;
+    width: 800px;
 }
 
 .docs-content > article {
-    /* position: relative; */
+    border-bottom: 1px solid var(--disabled-tint)
 }
 
 .page-header {
@@ -63,7 +65,7 @@ nav .nav-item {
 }
 
 .docs-content > article > .page-content {
-    padding: 10rem 0 0;
+    padding: 12rem 0 0;
 }
 
 .page-header > h3 {
@@ -149,6 +151,10 @@ footer {
 
 .mobile-viewable {
     display: none;
+}
+
+a {
+    font-weight: 500;
 }
 
 @media screen and (max-width: 1990px) {

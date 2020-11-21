@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Prism from "prismjs";
+import packageJSON from '../../package.json';
 
 export default class PrismCodeBlock extends Component {
     constructor(props) {
@@ -21,7 +22,7 @@ export default class PrismCodeBlock extends Component {
         this.setState({
             copied: true,
         })
-    
+
         setTimeout(() => {
             this.setState({
                 copied: false,
@@ -53,7 +54,7 @@ export default class PrismCodeBlock extends Component {
         else {
             style = {};
         }
-        
+
         function createMarkup(code) {
             return {__html: code};
         }
@@ -64,12 +65,18 @@ export default class PrismCodeBlock extends Component {
             className += ' with-output';
             output = "" + this.state.codeBlock.code;
         }
+
+        let prependedText = '';
+
+        if(this.state.codeBlock.language === 'command') {
+            prependedText = '> '
+        }
         return (
             <div className="code-block-contianer">
                 <div className={className}>
                     <pre>
                         <code className={`language-${this.state.codeBlock.language}`}>
-                            {this.state.codeBlock.code}
+                            {`${prependedText}${this.state.codeBlock.code}`}
                         </code>
                     </pre>
                     <CopyToClipboard
@@ -81,9 +88,9 @@ export default class PrismCodeBlock extends Component {
                     </CopyToClipboard>
                 </div>
                 {
-                    this.state.codeBlock.isOutputVisible ? 
+                    this.state.codeBlock.isOutputVisible ?
                     <div className="code-output" dangerouslySetInnerHTML={createMarkup(this.state.codeBlock.code)}>
-                    </div>  
+                    </div>
                     : ''
                 }
             </div>
