@@ -53,14 +53,16 @@ export const docsBackground = {
     },
     typography: {
         style: {
-            background: 'url(\'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="1em" y="1em" font-weight="100">a</text></svg>\');',
+            backgroundImage: 'url(\'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="1em" y="1em" font-weight="100">a</text></svg>\');',
             backgroundSize: '75px 75px',
+            position: 'absolute',
         },
         tintStyle: {
             opacity: 0.8,
             backdropFilter: 'blur(3px)',
-            backgroundImage: 'radial-gradient(circle at top left, #ccc4fdBB 0%, transparent 50%)',
-        }
+            background: '#ccc4fdBB',
+        },
+        tintContent: true
     },
     form_components: {
         style: {
@@ -109,7 +111,7 @@ export const docsBackground = {
         tintStyle: {
             opacity: 0.5,
             backdroppFilter: 'blur(3px)',
-            backgroundImage: 'radial-gradient(circle at bottom left, #ccc4fd88 0%, transparent 40%)',
+            backgroundImage: 'radial-gradient(circle at bottom left, #ccc4fd66 0%, transparent 40%)',
         }
     },
     customizations: {

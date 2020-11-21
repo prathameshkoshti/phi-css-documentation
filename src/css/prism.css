@@ -52,7 +52,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #00214d;
+	background: var(--dark-blue);
 }
 
 /* Inline code */
@@ -79,10 +79,9 @@ pre[class*="language-"] {
 }
 
 .token.tag,
-.token.attr-name,
 .token.namespace,
 .token.deleted {
-	color: #e2777a;
+	color: #f06c70;
 }
 
 .token.function-name {
@@ -119,6 +118,7 @@ pre[class*="language-"] {
 }
 
 .token.operator,
+.token.attr-name,
 .token.entity,
 .token.url {
 	color: #67cdcc;

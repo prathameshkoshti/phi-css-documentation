@@ -88,6 +88,17 @@ nav .nav-item {
     width: 100%;
     height: 100%;
     z-index: -1;
+    overflow: hidden;
+}
+
+.tint > div {
+    position: absolute;
+    bottom: -2rem;
+    font-size: 7rem;
+    font-weight: 700;
+    font-family: var(--serif-font);
+    color: var(--accent);
+    right: 35%;
 }
 
 .docs-sidebar-container {
@@ -158,6 +169,10 @@ footer {
         position: relative;
         transform: translate(-17%, -40%);
     }
+
+    .tint > div {
+        left: 4%;
+    }
 }
 
 @media screen and (max-width: 1340px) and (min-width: 600px) {
@@ -174,6 +189,12 @@ footer {
 @media screen and (min-width: 1100px) {
     .docs-sidebar-container {
         flex: 0 0 300px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .tint > div {
+        right: 30%;
     }
 }
 
@@ -224,6 +245,11 @@ footer {
         bottom: 0;
         right: 0;
     }
+
+    .tint > div {
+        right: 37%;
+        bottom: 2rem;
+    }
 }
 
 
@@ -231,6 +257,15 @@ footer {
     .page-header > h3 {
         text-align: center;
         transform: translateY(-40%);
+    }
+
+    .tint > div {
+        left: 1rem;
+        bottom: -1.618rem;
+    }
+
+    .page-header {
+        padding: 4rem 3rem 0;
     }
 }
 
