@@ -20,6 +20,14 @@
     color: var(--dark);
 }
 
+a.active {
+    color: var(--accent);
+}
+
+a.active span {
+    font-weight: 600;
+}
+
 .docsLink {
     margin-bottom: 1rem;
 }

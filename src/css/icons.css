@@ -28,6 +28,9 @@
 .chevron-down:hover {
     cursor: pointer;
 }
+.chevron-down.active::after {
+    border-color: var(--accent);
+}
 
 /* hamburger-icom */
 .hamburger-btn {

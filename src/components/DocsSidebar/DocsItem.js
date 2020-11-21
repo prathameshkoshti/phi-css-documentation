@@ -10,11 +10,13 @@ export default class DocsItem extends Component {
                 dropdownEnabled : true,
                 dropdownState: 'closed',
                 downArrowClass: 'chevron-down',
+                isActive: false,
             }
         }
         else {
             this.state = {
                 dropdownEnabled : false,
+                isActive: false,
             }
         }
 
@@ -27,7 +29,7 @@ export default class DocsItem extends Component {
             if(url.includes(this.props.id)) {
                 this.setState({
                     dropdownState: 'opened',
-                    downArrowClass: 'chevron-down rotate',
+                    downArrowClass: this.state.downArrowClass + ' rotate',
                 })
             }
             else {
@@ -36,6 +38,16 @@ export default class DocsItem extends Component {
                     downArrowClass: 'chevron-down',
                 })
             }
+        }
+        if(location.pathname.includes(this.props.link)) {
+            this.setState({
+                isActive: true,
+            })
+        }
+        else {
+            this.setState({
+                isActive: false
+            })
         }
     }
 
@@ -68,11 +80,11 @@ export default class DocsItem extends Component {
             <li className={docsSidebarStyle.docsLink}>
                 <div className="flex" onClick={(e) => this.handleDropdown(e) }>
                     <Link href={this.props.subLinks ? '' : `/docs/${this.props.link}`}>
-                        <a>
+                        <a className={this.state.isActive ? docsSidebarStyle.active: ''}>
                             <span className="docs-link">{this.props.title}</span>
                         </a>
                     </Link>
-                    {this.props.subLinks ? <i className={this.state.downArrowClass} icon-role="chevron-down" /> : ''}
+                    {this.props.subLinks ? <i className={this.state.isActive ? `${this.state.downArrowClass} active` : this.state.downArrowClass} icon-role="chevron-down" /> : ''}
                 </div>
                 {
                     this.props.subLinks ?
@@ -82,7 +94,7 @@ export default class DocsItem extends Component {
                                     {this.props.subLinks.map(subLink => {
                                         return (
                                             <Link key={subLink.id} href={`/docs/components/${subLink.link}`}>
-                                                <a>
+                                                <a className={this.state.isActive && location.pathname.includes(subLink.id )? docsSidebarStyle.active: ''}>
                                                     <li>{subLink.title}</li>
                                                 </a>
                                             </Link>
