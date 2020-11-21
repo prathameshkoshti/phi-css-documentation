@@ -73,9 +73,9 @@ export const docsBackground = {
             backgroundPosition: '0 0, 0 0, 18px 32px, 18px 32px, 0 0, 18px 32px',
         },
         tintStyle: {
-            opacity: 0.85,
-            backdropFilter: 'blur(5px)',
-            backgroundImage: 'radial-gradient(circle at top left, #ccc4fdBB 0%, transparent 50%)',
+            opacity: 1,
+            backdropFilter: 'blur(3px)',
+            backgroundImage: 'radial-gradient(circle at top left, #ccc4fd 0%, #ccc4fd44 50%)',
         }
     },
     tables: {
