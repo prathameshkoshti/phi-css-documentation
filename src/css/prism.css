@@ -31,6 +31,14 @@ pre[class*="language-"] {
 
 }
 
+code[class*="language-"] {
+	pointer-events: none;
+}
+
+code[class*="language-"]::selection, code[class*="language-"] > span::selection {
+	color: var(--accent-light);
+}
+
 /* Code blocks */
 pre[class*="language-"] {
 	padding: var(--rem-mul-phi);
