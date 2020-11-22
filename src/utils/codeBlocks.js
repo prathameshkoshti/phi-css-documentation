@@ -23,7 +23,7 @@ export const includePhiCode = {
 }
 
 export const includePhiMinCode = {
-    code: `<link href="https://unpkg.com/phi-css@1.0.0/dist/phi.min.css" rel="stylesheet">`,
+    code: '<link href="https://unpkg.com/phi-css@1.0.0/dist/phi.min.css" rel="stylesheet">',
     language: 'html',
     isOutputVisible: false,
 }
@@ -36,4 +36,17 @@ export const npmInstallCmd = {
 export const importCode = {
     code: "import 'phi-css/dist/phi.min.css'",
     language: 'javascript',
+}
+
+export const baseCodeBlocks = {
+    containerCode: {
+        code: '<div class="container"></div>',
+        language: 'html',
+        isOutputVisible: false,
+    },
+    responsiveImageCode: {
+        code: '<img class="phi-image" src="/images/M101.jpg"></img>',
+        language: 'html',
+        isOutputVisible: true,
+    }
 }

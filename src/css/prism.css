@@ -43,7 +43,7 @@ code[class*="language-"]::selection, code[class*="language-"] span::selection {
 pre[class*="language-"] {
 	padding: var(--rem-mul-phi);
 	padding-bottom: 2.5rem;
-	margin: .5em 0 0;
+	margin: 0;
 	border: 0;
 	overflow: auto;
 	border-radius: 5px;
@@ -165,7 +165,7 @@ pre > code {
 .code-block-copy {
 	color: var(--magenta);
 	border-radius: 5px;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	padding: 0 5px;
 	display: inline-block;
 	background-color: var(--dark-blue);
@@ -175,6 +175,7 @@ pre > code {
 	right: 10px;
 	cursor: pointer;
 	transition: var(--transition);
+	font-weight: 500;
 }
 
 .code-block-copy:hover {
