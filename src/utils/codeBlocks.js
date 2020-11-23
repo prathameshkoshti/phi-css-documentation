@@ -50,3 +50,76 @@ export const baseCodeBlocks = {
         isOutputVisible: true,
     }
 }
+
+export const gridCodeBlocks = {
+    rowCode: {
+        code: '<div class="row"></div>',
+        language: 'html',
+        isOutputVisible: false,
+    },
+
+    colCombo1Code: {
+        code: `<div class="row">
+    <div class="phi-col-10"></div>
+    <div class="phi-col-9"></div>
+</div>`,
+        language: 'html',
+        isOutputVisible: true,
+    },
+
+    colCombo2Code: {
+        code: `<div class="row">
+    <div class="phi-col-10"></div>
+    <div class="phi-col-8"></div>
+    <div class="phi-col-7"></div>
+</div>`,
+        language: 'html',
+        isOutputVisible: true,
+    },
+
+
+    colCombo3Code: {
+        code: `<div class="row">
+        <div class="phi-col-10"></div>
+        <div class="phi-col-7"></div>
+        <div class="phi-col-6"></div>
+        <div class="phi-col-6"></div>
+        <div class="phi-col-5"></div>
+</div>`,
+        language: 'html',
+        isOutputVisible: true,
+    },
+
+    colCombo4Code: {
+        code: `<div class="row">
+    <div class="phi-col-md"></div>
+    <div class="phi-col-md"></div>
+    <div class="phi-col-sm"></div>
+</div>`,
+        language: 'html',
+        isOutputVisible: true,
+    },
+
+    colCombo5Code: {
+        code: `<div class="row">
+    <div class="phi-col-9"></div>
+    <div class="phi-col-8"></div>
+    <div class="phi-col-8"></div>
+    <div class="phi-col-7"></div>
+</div>`,
+        language: 'html',
+        isOutputVisible: true,
+    },
+
+    colCombo6Code: {
+        code: `<div class="row">
+    <div class="phi-col-7"></div>
+    <div class="phi-col-8"></div>
+    <div class="phi-col-8"></div>
+    <div class="phi-col-8"></div>
+    <div class="phi-col-7"></div>
+</div>`,
+        language: 'html',
+        isOutputVisible: true,
+    }
+}

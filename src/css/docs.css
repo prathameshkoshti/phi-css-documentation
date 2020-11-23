@@ -161,6 +161,42 @@ a {
     font-weight: 500;
 }
 
+.code-output {
+    padding: 1rem;
+    border-radius: 3px;
+    border: 1px solid var(--disabled-tint);
+}
+
+.code-output > .row > div[class^="phi-col"] {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background: var(--accent-tint);
+    color: var(--accent-shade);
+    border: 1px solid var(--accent);
+    border-right: 0px solid var(--accent);
+}
+
+.code-output > .row > div[class^="phi-col"]::after {
+    content: attr(class);
+    position: absolute;
+}
+
+.code-output > .row > div[class^="phi-col"]:last-child {
+    border-right-width: 1px;
+}
+
+.phi-col-6::after, .phi-col-5::after, .phi-col-4::after, .phi-col-3::after, .phi-col-2::after, .phi-col-1::after {
+    left: calc(100% + 20px);
+    width: 100px;
+}
+
+.code-block-contianer .code-output div[class^="phi-col"] {
+    overflow: hidden;
+}
+
 @media screen and (max-width: 1990px) {
     .docs-sidebar-container {
         margin-left: 80px;
@@ -259,6 +295,23 @@ a {
     .tint > div {
         right: 37%;
         bottom: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 765px) {
+    .code-output > .row > div[class^="phi-col"] {
+        border-right-width: 1px;
+        border-bottom-width: 0px;
+    }
+
+    .code-output > .row > div[class^="phi-col"]:last-child {
+        border-bottom-width: 1px;
+    }
+
+    .phi-col-6::after, .phi-col-5::after, .phi-col-4::after, .phi-col-3::after, .phi-col-2::after, .phi-col-1::after {
+        text-align: center;
+        left: initial;
     }
 }
 

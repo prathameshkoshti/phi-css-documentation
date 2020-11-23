@@ -1,16 +1,125 @@
 import React from 'react';
 import PrismCodeBlock from '../../components/PrismCodeBlock';
-import { sampleCode } from '../../utils/codeBlocks';
+import { gridCodeBlocks } from '../../utils/codeBlocks';
 import CommonDocsLayout from '../../components/CommonDocsLayout';
+import Link from 'next/link';
 
 export default function grid() {
     return (
         <CommonDocsLayout currentPageId="grid" pageHeader="Grid">
             <section>
                 <p>
-                    
+                    The whole grid is fabricated using the number <strong>1.618</strong>. If you want to know more about how it was curated, visit the <Link href="/idea"><a>Idea</a></Link>.
                 </p>
-                <PrismCodeBlock codeBlock={sampleCode} />
+            </section>
+            <section>
+                <h4>Row</h4>
+                <p>
+                    When you define a container for your webpage, you can add rows in it. The row uses flexbox layout to hold multiple columns within itself. To add a row inside your container add a <code>.row</code> class to a div like this:
+                </p>
+                <PrismCodeBlock codeBlock={gridCodeBlocks.rowCode} />
+            </section>
+            <section>
+                <h4>Columns</h4>
+                <p>
+                    In this framework, columns are divided using the number <strong>1.618</strong>. Since the number is irrational in nature, the grid cannot be divided/broken into 12-columns or 24-columns layout, which is general concept of any grid (Most CSS frameworks follow this mechanism).
+                </p>
+                <p>
+                    This might seem different than what we are generally used to. But this grid system will enable user to divide the container using the golden ratio. To use columns in the <code>.row</code>, you can use a div element with class <code>.phi-col-*</code>, * can be from 1 to 10, base, xl, lg, md, sm and xs.
+                </p>
+                <ul>
+                    <li>
+                        <code>.phi-col-base</code> column will occupy 100% of the container.
+                    </li>
+                    <li>
+                        <code>.phi-col-10</code> column is equivalent to the <code>.phi-col-lg</code> column, both can be used alternatively.
+                    </li>
+                    <li>
+                        <code>.phi-col-9</code> column is equivalent to the <code>.phi-col-md</code> column, both can be used alternatively.
+                    </li>
+                    <li>
+                        <code>.phi-col-8</code> column is equivalent to the <code>.phi-col-sm</code> column, both can be used alternatively.
+                    </li>
+                    <li>
+                        <code>.phi-col-7</code> column is equivalent to the <code>.phi-col-xs</code> column, both can be used alternatively.
+                    </li>
+                </ul>
+                <p>
+                    Here's how they look in action:
+                </p>
+                <div className="code-output">
+                    <div className="row">
+                        <div className="phi-col-base"></div>
+                    </div>
+                    <div className="row">
+                        <div className="phi-col-xl"></div>
+                    </div>
+                    <div className="row">
+                        <div className="phi-col-10"></div>
+                    </div>
+                    <div className="row">
+                        <div className="phi-col-lg"></div>
+                    </div>
+                    <div className="row">
+                        <div className="phi-col-9"></div>
+                    </div>
+                    <div className="row">
+                        <div className="phi-col-md"></div>
+                    </div>
+                    <div className="row">
+                        <div className="phi-col-8"></div>
+                    </div>
+                    <div className="row">
+                        <div className="phi-col-sm"></div>
+                    </div>
+                    <div className="row">
+                        <div className="phi-col-7"></div>
+                    </div>
+                    <div className="row">
+                        <div className="phi-col-xs"></div>
+                    </div>
+                    <div className="row">
+                        <div className="phi-col-6"></div>
+                    </div>
+                    <div className="row">
+                        <div className="phi-col-5"></div>
+                    </div>
+                    <div className="row">
+                        <div className="phi-col-4"></div>
+                    </div>
+                    <div className="row">
+                        <div className="phi-col-3"></div>
+                    </div>
+                    <div className="row">
+                        <div className="phi-col-2"></div>
+                    </div>
+                    <div className="row">
+                        <div className="phi-col-1"></div>
+                    </div>
+                </div>
+                <p>
+                    As you might have noticed, from <code>.phi-col-4</code> to <code>.phi-col-1</code> the width is too small to fit any content in it, probably these won't be used much in the webpages. So the most usable columns lie above the column <code>.phi-col-4</code>.
+                </p>
+                <p>
+                    Below are some of the possible combinations of the columns which can be used in the webpages:
+                </p>
+                <code>.phi-col-10</code> and <code>.phi-col-9</code>
+                <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo1Code} />
+
+                <code>.phi-col-10</code>, <code>.phi-col-8</code> and <code>.phi-col-7</code>
+                <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo2Code} />
+
+                <code>.phi-col-10</code>, <code>.phi-col-7</code>, <code>.phi-col-6</code> and <code>.phi-col-5</code>
+                <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo3Code} />
+
+                <code>.phi-col-md</code> and <code>.phi-col-sm</code>
+                <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo4Code} />
+
+                <code>.phi-col-9</code>, <code>.phi-col-8</code> and <code>.phi-col-7</code>
+                <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo5Code} />
+
+                <code>.phi-col-8</code> and <code>.phi-col-7</code>
+                <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo6Code} />
             </section>
         </CommonDocsLayout>
     )

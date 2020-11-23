@@ -191,6 +191,7 @@ pre > code {
 .code-block-contianer {
 	display: flex;
 	flex-direction: column;
+	margin-top: var(--rem-div-phi);
 }
 
 .code-block.with-output > pre[class*="language-"] {

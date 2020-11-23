@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--rem-mul-phi) 0;
+    padding: var(--rem-mul-phi) 0 5rem;
 }
 
 .paginationNext, .paginationPrev, .allJumpPoints {
