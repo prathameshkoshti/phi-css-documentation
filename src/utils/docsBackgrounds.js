@@ -53,12 +53,12 @@ export const docsBackground = {
     },
     typography: {
         style: {
-            backgroundImage: 'url(\'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="1em" y="1em" font-weight="100">a</text></svg>\');',
+            backgroundImage: 'url(\'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="1em" y="1em" font-weight="100" fill="purple">a</text></svg>\')',
             backgroundSize: '75px 75px',
             position: 'absolute',
         },
         tintStyle: {
-            opacity: 0.8,
+            opacity: 0.5,
             backdropFilter: 'blur(3px)',
             background: '#ccc4fdBB',
         },
