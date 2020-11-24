@@ -97,7 +97,7 @@ export default function grid() {
                         <div className="phi-col-1"></div>
                     </div>
                 </div>
-                <p>
+                <p className="note">
                     As you might have noticed, from <code>.phi-col-4</code> to <code>.phi-col-1</code> the width is too small to fit any content in it, probably these won't be used much in the webpages. So the most usable columns lie above the column <code>.phi-col-4</code>.
                 </p>
                 <p>
