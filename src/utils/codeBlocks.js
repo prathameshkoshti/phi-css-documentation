@@ -134,3 +134,70 @@ export const gridCodeBlocks = {
         isOutputVisible: true,
     }
 }
+
+export const typographyCodeBlocks = {
+    headingCodeBlock: {
+        code: `<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>`,
+        language: 'html',
+        isOutputVisible: true,
+    },
+
+    unorderedListcodeBlock: {
+        code: `<ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+    <li>List item 4</li>
+    <li>List item 5</li>
+</ul>`,
+        language: 'html',
+        isOutputVisible: true,
+    },
+
+    orderedListCodeBlock: {
+        code: `<ol>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+    <li>List item 4</li>
+    <li>List item 5</li>
+</ol>`,
+            language: 'html',
+            isOutputVisible: true,
+    },
+
+    blockquoteCodeBlock: {
+        code: `<blockquote>
+        If you’re curious about this, it’s a garbled quotation from Cicero’s De Finibus Bonorum et Malorum (On the Ends of Good and Bad), book 1, paragraph 32, which reads, “Neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit,” meaning, “There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.”
+</blockquote>`,
+        language: 'html',
+        isOutputVisible: true,
+    },
+
+    contrastinFont1CoddeBlock: {
+        code: `<div class="contrast-style-1">
+    <h3>Heading</h3>
+    <p>
+        If you’re curious about this, it’s a garbled quotation from Cicero’s De Finibus Bonorum et Malorum (On the Ends of Good and Bad), book 1, paragraph 32, which reads, “Neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit,” meaning, “There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.”
+    </p>
+</div>`,
+        language: 'html',
+        isOutputVisible: true
+    },
+
+    contrastinFont2CoddeBlock: {
+        code: `<div class="contrast-style-2">
+    <h3>Heading</h3>
+    <p>
+        If you’re curious about this, it’s a garbled quotation from Cicero’s De Finibus Bonorum et Malorum (On the Ends of Good and Bad), book 1, paragraph 32, which reads, “Neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit,” meaning, “There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.”
+    </p>
+</div>`,
+        language: 'html',
+        isOutputVisible: true
+    }
+}
