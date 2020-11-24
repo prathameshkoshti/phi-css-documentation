@@ -45,7 +45,7 @@ export default function grid() {
                     </li>
                 </ul>
                 <p>
-                    Here's how they look in action:
+                    Here's how they look in action, try to resize the browser window if you are visiting the documentation from desktop, the columns will acquire the 100% width when the screen width reaches <code>765px</code> breakpoint
                 </p>
                 <div className="code-output">
                     <div className="row">
@@ -120,6 +120,10 @@ export default function grid() {
 
                 <code>.phi-col-8</code> and <code>.phi-col-7</code>
                 <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo6Code} />
+
+                <p>You might have a question in your mind, what about equally distributed columns? Is it possible with this framework? No not really possible because of phi's irrational nature. But there is a kind of tweak you can do to achieve this, with the help of utility classes. Read more about it <Link href="/docs/utilities"><a>here</a></Link>. You can combine the utility classes functionality to achieve the desired equally distributed layout at certain point. For example,</p>
+
+                <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo7Code} />
             </section>
         </CommonDocsLayout>
     )

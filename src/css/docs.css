@@ -163,7 +163,7 @@ a {
 
 .code-output {
     padding: 1rem;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px solid var(--disabled-tint);
 }
 
@@ -182,6 +182,11 @@ a {
 .code-output > .row > div[class^="phi-col"]::after {
     content: attr(class);
     position: absolute;
+    text-align: center;
+}
+
+.row.justify-content-space-between > div[class^="phi-col"] {
+    border-width: 1px;
 }
 
 .code-output > .row > div[class^="phi-col"]:last-child {
@@ -310,7 +315,6 @@ a {
     }
 
     .phi-col-6::after, .phi-col-5::after, .phi-col-4::after, .phi-col-3::after, .phi-col-2::after, .phi-col-1::after {
-        text-align: center;
         left: initial;
     }
 }

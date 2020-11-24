@@ -121,5 +121,16 @@ export const gridCodeBlocks = {
 </div>`,
         language: 'html',
         isOutputVisible: true,
+    },
+
+    colCombo7Code: {
+        code: `<div class="row justify-content-space-between">
+    <div class="phi-col-8"></div>
+    <div class="phi-col-8"></div>
+    <div class="phi-col-8"></div>
+    <div class="phi-col-8"></div>
+</div>`,
+        language: 'html',
+        isOutputVisible: true,
     }
 }

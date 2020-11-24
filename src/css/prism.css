@@ -194,14 +194,16 @@ pre > code {
 	margin-top: var(--rem-div-phi);
 }
 
-.code-block.with-output > pre[class*="language-"] {
+.code-block-contianer > .code-block.with-output > pre[class*="language-"] {
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
 
-.code-block.with-output + .code-output {
+.code-block-contianer > .code-block.with-output + .code-output {
+	border-radius: 0px;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	padding: var(--rem-mul-phi) var(--rem-div-phi);
 	border: 1px solid var(--disabled-tint);
+	border-top-width: 0;
 }
