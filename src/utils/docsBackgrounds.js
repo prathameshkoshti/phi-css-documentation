@@ -64,11 +64,23 @@ export const docsBackground = {
         },
         tintContent: true
     },
+    links_and_buttons: {
+        style: {
+            opacity: 1,
+            backgroundColor: 'var(--accent-light)',
+            backgroundImage: 'repeating-linear-gradient(transparent, transparent 50px, rgba(122,101,251,.4) 50px, rgba(122,101,251,.4) 53px, transparent 53px, transparent 63px, rgba(122,101,251,.4) 63px, rgba(122,101,251,.4) 66px, transparent 66px, transparent 116px, rgba(122,101,251,.5) 116px, rgba(122,101,251,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(122,101,251,.5) 169px, rgba(122,101,251,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(122,101,251,.5) 182px, rgba(122,101,251,.5) 232px, transparent 232px),repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(122,101,251,.4) 50px, rgba(122,101,251,.4) 53px, transparent 53px, transparent 63px, rgba(122,101,251,.4) 63px, rgba(122,101,251,.4) 66px, transparent 66px, transparent 116px, rgba(122,101,251,.5) 116px, rgba(122,101,251,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(122,101,251,.5) 169px, rgba(122,101,251,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(122,101,251,.5) 182px, rgba(122,101,251,.5) 232px, transparent 232px),repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(122,101,251,.2) 2px, rgba(122,101,251,.2) 3px, transparent 3px, transparent 5px, rgba(122,101,251,.2) 5px)',
+        },
+        tintStyle: {
+            opacity: 1,
+            backdropFilter: 'blur(3px)',
+            backgroundImage: 'radial-gradient(circle at top left, #ccc4fd 0%, #ccc4fd44 50%)',
+        }
+    },
     form_components: {
         style: {
             backgroundColor: 'var(--light)',
             opacity: 1,
-            backgroundImage:  'linear-gradient(30deg, #7a65fb 12%, transparent 12.5%, transparent 87%, #7a65fb 87.5%, #7a65fb), linear-gradient(150deg, #7a65fb 12%, transparent 12.5%, transparent 87%, #7a65fb 87.5%, #7a65fb), linear-gradient(30deg, #7a65fb 12%, transparent 12.5%, transparent 87%, #7a65fb 87.5%, #7a65fb), linear-gradient(150deg, #7a65fb 12%, transparent 12.5%, transparent 87%, #7a65fb 87.5%, #7a65fb), linear-gradient(60deg, #7a65fb77 25%, transparent 25.5%, transparent 75%, #7a65fb77 75%, #7a65fb77), linear-gradient(60deg, #7a65fb77 25%, transparent 25.5%, transparent 75%, #7a65fb77 75%, #7a65fb77)',
+            backgroundImage: 'linear-gradient(30deg, #7a65fb 12%, transparent 12.5%, transparent 87%, #7a65fb 87.5%, #7a65fb), linear-gradient(150deg, #7a65fb 12%, transparent 12.5%, transparent 87%, #7a65fb 87.5%, #7a65fb), linear-gradient(30deg, #7a65fb 12%, transparent 12.5%, transparent 87%, #7a65fb 87.5%, #7a65fb), linear-gradient(150deg, #7a65fb 12%, transparent 12.5%, transparent 87%, #7a65fb 87.5%, #7a65fb), linear-gradient(60deg, #7a65fb77 25%, transparent 25.5%, transparent 75%, #7a65fb77 75%, #7a65fb77), linear-gradient(60deg, #7a65fb77 25%, transparent 25.5%, transparent 75%, #7a65fb77 75%, #7a65fb77)',
             backgroundSize: '36px 63px',
             backgroundPosition: '0 0, 0 0, 18px 32px, 18px 32px, 0 0, 18px 32px',
         },

@@ -201,3 +201,35 @@ export const typographyCodeBlocks = {
         isOutputVisible: true
     }
 }
+
+export const formComponenetCodeBlocks = {
+    linkCodeBlock: {
+        code: `<span>This is how a <a href="#">Link</a> looks like</span>`,
+        language: 'html',
+        isOutputVisible: true
+    },
+
+    buttonCodeBlock: {
+        code: `<button class="button">Button</button>`,
+        language: 'html',
+        isOutputVisible: true
+    },
+
+    secondaryButtonCodeBlock: {
+        code: `<button class="button button-secondary">Button</button>`,
+        language: 'html',
+        isOutputVisible: true
+    },
+
+    ghostButtonCodeBlock: {
+        code: `<button class="button button-ghost">Button</button>`,
+        language: 'html',
+        isOutputVisible: true
+    },
+
+    disabledButtonCodeBlock: {
+        code: `<button class="button button-disabled">Button</button>`,
+        language: 'html',
+        isOutputVisible: false
+    }
+}
