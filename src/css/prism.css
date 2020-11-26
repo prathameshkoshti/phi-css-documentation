@@ -204,6 +204,6 @@ pre > code {
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	padding: var(--rem-mul-phi) var(--rem-div-phi);
-	border: 1px solid var(--disabled-tint);
+	border: 1px solid var(--grey-tint);
 	border-top-width: 0;
 }

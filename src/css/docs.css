@@ -56,7 +56,7 @@ nav .nav-item {
 }
 
 .docs-content > article {
-    border-bottom: 1px solid var(--disabled-tint)
+    border-bottom: 1px solid var(--grey-tint)
 }
 
 .docs-content > article section {
@@ -164,7 +164,7 @@ a {
 .code-output {
     padding: 1rem;
     border-radius: 5px;
-    border: 1px solid var(--disabled-tint);
+    border: 1px solid var(--grey-tint);
 }
 
 .code-output > .row > div[class^="phi-col"] {
@@ -211,7 +211,7 @@ a {
 
 .note > code {
     background: #B5B5B570;
-    color: var(--disabled-shade);
+    color: var(--grey-shade);
 }
 
 @media screen and (max-width: 1990px) {
