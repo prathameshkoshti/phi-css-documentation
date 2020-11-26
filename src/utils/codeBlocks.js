@@ -212,19 +212,19 @@ export const formComponenetCodeBlocks = {
     buttonCodeBlock: {
         code: `<button class="button">Button</button>`,
         language: 'html',
-        isOutputVisible: true
+        isOutputVisible: false
     },
 
     secondaryButtonCodeBlock: {
         code: `<button class="button button-secondary">Button</button>`,
         language: 'html',
-        isOutputVisible: true
+        isOutputVisible: false
     },
 
     ghostButtonCodeBlock: {
         code: `<button class="button button-ghost">Button</button>`,
         language: 'html',
-        isOutputVisible: true
+        isOutputVisible: false
     },
 
     disabledButtonCodeBlock: {

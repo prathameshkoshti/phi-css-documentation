@@ -28,14 +28,15 @@ export default function links_and_buttons() {
                     <li>Error button</li>
                 </ul>
                 <div className="code-output">
-                    <button className="button">Button</button>
-                    <button className="button button-secondary">Button</button>
-                    <button className="button button-ghost">Button</button>
+                    <button className="button" title="Primary Button">Primary Button</button>
+                    <button className="button button-secondary" title="Secondary Button">Secondary Button</button>
+                    <button className="button button-ghost" title="Ghost Button">Ghost Button</button>
+                    <button className="button button-grey" title="Grey Button">Grey Button</button>
                     <br />
-                    <button className="button button-info">Button</button>
-                    <button className="button button-success">Button</button>
-                    <button className="button button-warning">Button</button>
-                    <button className="button button-error">Button</button>
+                    <button className="button button-info" title="Info Button">Info Button</button>
+                    <button className="button button-success" title="Success Button">Success Button</button>
+                    <button className="button button-warning" title="Warning Button">Warning Button</button>
+                    <button className="button button-error" title="Error Button">Error Button</button>
                 </div>
                 <p>
                     To create a button, use the <code>&lt;button&gt;</code> tag with class <code>.button</code>. By default the button will be primary button.
@@ -57,9 +58,15 @@ export default function links_and_buttons() {
                     Here's how disabled buttons look like.
                 </p>
                 <div className="code-output">
-                    <button className="button button-disabled" disabled>Primary Button</button>
-                    <button className="button button-secondary button-disabled" disabled>Secondary Button</button>
-                    <button className="button button-ghost button-disabled" disabled>Ghost Button</button>
+                    <button className="button button-disabled" disabled title="Primary Button">Primary Button</button>
+                    <button className="button button-secondary button-disabled" disabled title="Secondary Button">Secondary Button</button>
+                    <button className="button button-ghost button-disabled" disabled title="Ghost Button">Ghost Button</button>
+                    <button className="button button-grey button-disabled" disabled title="Grey Button">Grey Button</button>
+                    <br />
+                    <button class="button button-info button-disabled" disabled title="Info button">Info Button</button>
+                    <button class="button button-success button-disabled" disabled title="Success Button">Success Button</button>
+                    <button class="button button-warning button-disabled" disabled title="Warning Button">Warning Button</button>
+                    <button class="button button-error button-disabled" disabled title="Error Button">Error Button</button>
                 </div>
             </section>
         </CommonDocsLayout>
