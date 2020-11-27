@@ -162,6 +162,10 @@ pre > code {
 	margin: 0 0 var(--rem-mul-phi) 0;
 }
 
+.links-code-output {
+	gap: 15px;
+}
+
 .code-block-copy {
 	color: var(--magenta);
 	border-radius: 5px;

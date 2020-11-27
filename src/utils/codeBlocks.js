@@ -202,13 +202,51 @@ export const typographyCodeBlocks = {
     }
 }
 
-export const formComponenetCodeBlocks = {
+export const linksCodeBlocks = {
     linkCodeBlock: {
-        code: `<span>This is how a <a href="#">Link</a> looks like</span>`,
+        code: `<span>This is how a <a class="link" href="#">Link</a> looks like</span>`,
         language: 'html',
         isOutputVisible: true
     },
 
+    secondaryLinkCodeBlock: {
+        code: '<a href="#" className="link link-secondary">Secondary link</a>',
+        language: 'html',
+        isOutputVisible: false
+    },
+
+    infoLinkCodeBlock: {
+        code: '<a href="#" className="link link-info">Info link</a>',
+        language: 'html',
+        isOutputVisible: false
+    },
+
+    successLinkCodeBlock: {
+        code: '<a href="#" className="link link-success">Success link</a>',
+        language: 'html',
+        isOutputVisible: false
+    },
+
+    warningLinkCodeBlock: {
+        code: '<a href="#" className="link link-warning">Warning link</a>',
+        language: 'html',
+        isOutputVisible: false
+    },
+
+    errorLinkCodeBlock: {
+        code: '<a href="#" className="link link-error">Error link</a>',
+        language: 'html',
+        isOutputVisible: false
+    },
+
+    greyLinkCodeBlock: {
+        code: '<a href="#" className="link link-grey">Grey link</a>',
+        language: 'html',
+        isOutputVisible: false
+    },
+}
+
+export const buttonsCodeBlocks = {
     buttonCodeBlock: {
         code: `<button class="button">Button</button>`,
         language: 'html',
@@ -227,9 +265,43 @@ export const formComponenetCodeBlocks = {
         isOutputVisible: false
     },
 
+    infoButtonCodeBlock: {
+        code: `<button class="button button-info">Button</button>`,
+        language: 'html',
+        isOutputVisible: false
+    },
+
+    successButtonCodeBlock: {
+        code: `<button class="button button-success">Button</button>`,
+        language: 'html',
+        isOutputVisible: false
+    },
+
+    warningButtonCodeBlock: {
+        code: `<button class="button button-warning">Button</button>`,
+        language: 'html',
+        isOutputVisible: false
+    },
+
+    errorButtonCodeBlock: {
+        code: `<button class="button button-error">Button</button>`,
+        language: 'html',
+        isOutputVisible: false
+    },
+
+    greyButtonCodeBlock: {
+        code: `<button class="button button-grey">Button</button>`,
+        language: 'html',
+        isOutputVisible: false
+    },
+
     disabledButtonCodeBlock: {
         code: `<button class="button button-disabled">Button</button>`,
         language: 'html',
         isOutputVisible: false
     }
+}
+
+export const formComponenetCodeBlocks = {
+
 }

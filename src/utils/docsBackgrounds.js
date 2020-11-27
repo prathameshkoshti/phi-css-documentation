@@ -1,3 +1,5 @@
+import links from "../pages/docs/components/links";
+
 export const docsBackground = {
     inception: {
         style: {
@@ -64,11 +66,25 @@ export const docsBackground = {
         },
         tintContent: true
     },
-    links_and_buttons: {
+    links: {
         style: {
             opacity: 1,
             backgroundColor: 'var(--accent-light)',
             backgroundImage: 'repeating-linear-gradient(transparent, transparent 50px, rgba(122,101,251,.4) 50px, rgba(122,101,251,.4) 53px, transparent 53px, transparent 63px, rgba(122,101,251,.4) 63px, rgba(122,101,251,.4) 66px, transparent 66px, transparent 116px, rgba(122,101,251,.5) 116px, rgba(122,101,251,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(122,101,251,.5) 169px, rgba(122,101,251,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(122,101,251,.5) 182px, rgba(122,101,251,.5) 232px, transparent 232px),repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(122,101,251,.4) 50px, rgba(122,101,251,.4) 53px, transparent 53px, transparent 63px, rgba(122,101,251,.4) 63px, rgba(122,101,251,.4) 66px, transparent 66px, transparent 116px, rgba(122,101,251,.5) 116px, rgba(122,101,251,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(122,101,251,.5) 169px, rgba(122,101,251,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(122,101,251,.5) 182px, rgba(122,101,251,.5) 232px, transparent 232px),repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(122,101,251,.2) 2px, rgba(122,101,251,.2) 3px, transparent 3px, transparent 5px, rgba(122,101,251,.2) 5px)',
+        },
+        tintStyle: {
+            opacity: 1,
+            backdropFilter: 'blur(3px)',
+            backgroundImage: 'radial-gradient(circle at top left, #ccc4fd 0%, #ccc4fd44 50%)',
+        }
+    },
+    buttons: {
+        style: {
+            opacity: 1,
+            backgroundColor: 'var(--accent-light)',
+            backgroundImage: 'linear-gradient(335deg, var(--accent) 23px, transparent 23px),linear-gradient(155deg, var(--accent) 23px, transparent 23px),linear-gradient(335deg, var(--accent) 23px, transparent 23px),linear-gradient(155deg, var(--accent) 23px, transparent 23px)',
+            backgroundSize: '58px 58px',
+            backgroundPosition: '0px 2px, 4px 35px, 29px 31px, 34px 6px',
         },
         tintStyle: {
             opacity: 1,

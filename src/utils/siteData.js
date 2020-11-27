@@ -62,9 +62,14 @@ export const docsLinks = [
         link: 'components',
         subLinks: [
             {
-                id: 'links_and_buttons',
-                title: 'Links and Buttons',
-                link: 'links_and_buttons',
+                id: 'links',
+                title: 'Links',
+                link: 'links',
+            },
+            {
+                id: 'buttons',
+                title: 'Buttons',
+                link: 'buttons',
             },
             {
                 id: 'form_components',

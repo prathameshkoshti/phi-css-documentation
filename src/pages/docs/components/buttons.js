@@ -1,22 +1,15 @@
-import React from 'react'
+import React from 'react';
 import CommonDocsLayout from '../../../components/CommonDocsLayout';
 import PrismCodeBlock from '../../../components/PrismCodeBlock';
-import { formComponenetCodeBlocks } from '../../../utils/codeBlocks';
+import { buttonsCodeBlocks } from '../../../utils/codeBlocks';
 
-export default function links_and_buttons() {
+export default function buttons() {
     return (
-        <CommonDocsLayout currentPageId="links_and_buttons" parentPageId="components" pageHeader="Links and Buttons">
-            <section>
-                <h4>Link</h4>
-                <p>
-                    Use a simple <code>&lt;a&gt;</code> tag without any class. By default a link will be using the accent color by default.
-                </p>
-                <PrismCodeBlock codeBlock={formComponenetCodeBlocks.linkCodeBlock} />
-            </section>
+        <CommonDocsLayout currentPageId="buttons" parentPageId="components" pageHeader="Buttons">
             <section>
                 <h4>Buttons</h4>
                 <p>
-                Following types of buttons can be created using this framework:
+                    Following types of buttons can be created using this framework:
                 </p>
                 <ul>
                     <li>Primary button</li>
@@ -41,21 +34,41 @@ export default function links_and_buttons() {
                 <p>
                     To create a button, use the <code>&lt;button&gt;</code> tag with class <code>.button</code>. By default the button will be primary button.
                 </p>
-                <PrismCodeBlock codeBlock={formComponenetCodeBlocks.buttonCodeBlock} />
+                <PrismCodeBlock codeBlock={buttonsCodeBlocks.buttonCodeBlock} />
                 <p>
                     To create a secondary button, add another class <code>.button-secondary</code>.
                 </p>
-                <PrismCodeBlock codeBlock={formComponenetCodeBlocks.secondaryButtonCodeBlock} />
+                <PrismCodeBlock codeBlock={buttonsCodeBlocks.secondaryButtonCodeBlock} />
                 <p>
-                    To create a ghost button, add this class: <code>.button-ghost</code>. Ghost buttons act as button links, doesn't have any transitions.
+                    To create a ghost button, add this class: <code>.button-ghost</code>.
                 </p>
-                <PrismCodeBlock codeBlock={formComponenetCodeBlocks.ghostButtonCodeBlock} />
+                <PrismCodeBlock codeBlock={buttonsCodeBlocks.ghostButtonCodeBlock} />
                 <p>
-                    To create a disabled button, add another class <code>.button-disabled</code>.
+                    To create a grey button, add this class: <code>.button-grey</code>.
                 </p>
-                <PrismCodeBlock codeBlock={formComponenetCodeBlocks.disabledButtonCodeBlock} />
+                <PrismCodeBlock codeBlock={buttonsCodeBlocks.greyButtonCodeBlock} />
                 <p>
-                    Here's how disabled buttons look like.
+                    To create a info button, add this class: <code>.button-info</code>.
+                </p>
+                <PrismCodeBlock codeBlock={buttonsCodeBlocks.infoButtonCodeBlock} />
+                <p>
+                    To create a success button, add this class: <code>.button-success</code>.
+                </p>
+                <PrismCodeBlock codeBlock={buttonsCodeBlocks.successButtonCodeBlock} />
+                <p>
+                    To create a warning button, add this class: <code>.button-warning</code>.
+                </p>
+                <PrismCodeBlock codeBlock={buttonsCodeBlocks.warningButtonCodeBlock} />
+                <p>
+                    To create a error button, add this class: <code>.button-error</code>.
+                </p>
+                <PrismCodeBlock codeBlock={buttonsCodeBlocks.errorButtonCodeBlock} />
+                <p>
+                    To create a disabled button, append another class to the existing classes <code>.button-disabled</code>.
+                </p>
+                <PrismCodeBlock codeBlock={buttonsCodeBlocks.disabledButtonCodeBlock} />
+                <p>
+                    Here's how disabled buttons look like (for each type of button.)
                 </p>
                 <div className="code-output">
                     <button className="button button-disabled" disabled title="Primary Button">Primary Button</button>
@@ -68,6 +81,9 @@ export default function links_and_buttons() {
                     <button class="button button-warning button-disabled" disabled title="Warning Button">Warning Button</button>
                     <button class="button button-error button-disabled" disabled title="Error Button">Error Button</button>
                 </div>
+                <p className="note">
+                    To utilize the other types of button other than the primary it is necessary to add <code>.button</code> class to have the basic styling for the button and the other class will  override the styling as per specified class.
+                </p>
             </section>
         </CommonDocsLayout>
     )

@@ -11,11 +11,7 @@ export default function form_components() {
                 <p>
                     Link will be using the accent color by default.
                 </p>
-                <PrismCodeBlock codeBlock={formComponenetCodeBlocks.linkCodeBlock} />
-            </section>
-            <section>
-                <h4>Buttons</h4>
-                <p></p>
+                {/* <PrismCodeBlock codeBlock={formComponenetCodeBlocks.linkCodeBlock} /> */}
             </section>
         </CommonDocsLayout>
     )
