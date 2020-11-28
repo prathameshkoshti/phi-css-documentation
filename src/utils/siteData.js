@@ -76,12 +76,12 @@ export const docsLinks = [
                 title: 'Form components',
                 link: 'form_components'
             },
-            {
-                id: 'tables',
-                title: 'Tables',
-                link: 'tables'
-            },
         ]
+    },
+    {
+        id: 'tables',
+        title: 'Tables',
+        link: 'tables'
     },
     {
         id: 'utilities',

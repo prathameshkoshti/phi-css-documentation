@@ -305,3 +305,104 @@ export const buttonsCodeBlocks = {
 export const formComponenetCodeBlocks = {
 
 }
+
+export const tableCodeBlocks= {
+    simpleTableCodeBlock: {
+        code: `<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Height</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Stephen Curry</td>
+            <td>27</td>
+            <td>1,91</td>
+            <td>Akron</td>
+        </tr>
+        <tr>
+            <td>Klay Thompson</td>
+            <td>25</td>
+            <td>2,01</td>
+            <td>Los Angeles</td>
+        </tr>
+        <tr>
+            <td>Dave Gamache</td>
+            <td>43</td>
+            <td>1,89</td>
+            <td>San Francisco</td>
+        </tr>
+        <tr>
+            <td>Dwayne Johnson</td>
+            <td>50</td>
+            <td>2,05</td>
+            <td>Hayward</td>
+        </tr>
+    </tbody>
+</table>`,
+        language: 'html',
+        isOutputVisible: true,
+    },
+
+    responsiveTableCodeBlock: {
+        code: `<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Height</th>
+                <th>Location</th>
+                <th>Gender</th>
+                <th>Occupation</th>
+                <th>Reputation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Olivia Curry</td>
+                <td>27</td>
+                <td>1,91</td>
+                <td>Akron</td>
+                <td>Female</td>
+                <td>Doctor</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>Klay Thompson</td>
+                <td>25</td>
+                <td>2,01</td>
+                <td>Los Angeles</td>
+                <td>Male</td>
+                <td>Professor</td>
+                <td>400040</td>
+            </tr>
+            <tr>
+                <td>Dave Gamache</td>
+                <td>43</td>
+                <td>1,89</td>
+                <td>San Francisco</td>
+                <td>Male</td>
+                <td>Software Engineer</td>
+                <td>4359809</td>
+            </tr>
+            <tr>
+                <td>Diana Johnson</td>
+                <td>50</td>
+                <td>2,05</td>
+                <td>Hayward</td>
+                <td>Female</td>
+                <td>Software Engineer</td>
+                <td>324567</td>
+            </tr>
+        </tbody>
+    </table>
+</div>`,
+        language: 'html',
+        isOutputVisible: true,
+    }
+}
