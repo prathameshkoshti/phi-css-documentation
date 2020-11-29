@@ -179,6 +179,30 @@ export const typographyCodeBlocks = {
         isOutputVisible: true,
     },
 
+    codeCodeBlock: {
+        code: `<code>&lt;code&gt;</code>`,
+        language: 'html',
+        isOutputVisible: true,
+    },
+
+    kbdCodeBlock: {
+        code: `<kbd>ctl + ,</kbd>`,
+        language: 'html',
+        isOutputVisible: true,
+    },
+
+    sampCodeBlock: {
+        code: `<samp>This is a output.</samp>`,
+        language: 'html',
+        isOutputVisible: true,
+    },
+
+    varCodeBlock: {
+        code: `<var>a + b</var>`,
+        language: 'html',
+        isOutputVisible: true,
+    },
+
     contrastinFont1CoddeBlock: {
         code: `<div class="contrast-style-1">
     <h3>Heading</h3>
@@ -303,7 +327,36 @@ export const buttonsCodeBlocks = {
 }
 
 export const formComponenetCodeBlocks = {
+    inputTextCodeBlock: {
+        code: `<div class="form-input">
+    <label for="name">Name</label>
+    <input id="name" type="text" placeholder="Prathamesh Koshti" value="Prathamesh Koshti" />
+</div>`,
+        language: 'html',
+        isOutputVisible: true
+    },
 
+    checkboxCodeBlock: {
+        code: `<div class="form-checkbox">
+    <input id="accept-checkbox" type="checkbox" checked />
+    <label for="accept-checkbox">I accept the terms and conditions</label>
+</div>`,
+        language: 'html',
+        isOutputVisible: true
+    },
+
+    radioCodeBlock: {
+        code: `<div class="form-radio">
+    <input id="one" name="size" type="radio" checked />
+    <label for="one">One</label>
+</div>
+<div class="form-radio">
+    <input id="two" name="size" type="radio" />
+    <label for="two">Two</label>
+</div>`,
+        language: 'html',
+        isOutputVisible: true
+    }
 }
 
 export const tableCodeBlocks= {

@@ -207,6 +207,11 @@ a {
     padding: var(--rem-mul-phi);
     border-left: var(--rem-div-phi) solid var(--warning);
     color: var(--warning-shade);
+    max-width: 100%;
+}
+
+.note > p {
+    margin: var(--rem-div-phi) 0;
 }
 
 .note > code {

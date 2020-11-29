@@ -81,9 +81,11 @@ export default function buttons() {
                     <button class="button button-warning button-disabled" disabled title="Warning Button">Warning Button</button>
                     <button class="button button-error button-disabled" disabled title="Error Button">Error Button</button>
                 </div>
-                <p className="note">
-                    To utilize the other types of button other than the primary it is necessary to add <code>.button</code> class to have the basic styling for the button and the other class will  override the styling as per specified class.
-                </p>
+                <div className="note">
+                    <p>
+                        To utilize the other types of button other than the primary it is necessary to add <code>.button</code> class to have the basic styling for the button and the other class will  override the styling as per specified class.
+                    </p>
+                </div>
             </section>
         </CommonDocsLayout>
     )

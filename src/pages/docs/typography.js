@@ -54,6 +54,25 @@ export default function typography() {
                 <PrismCodeBlock codeBlock={typographyCodeBlocks.blockquoteCodeBlock} />
             </section>
             <section>
+                <h4>Code</h4>
+                <p>
+                    You can create inline code using <code>&lt;code&gt;</code>.
+                </p>
+                <PrismCodeBlock codeBlock={typographyCodeBlocks.codeCodeBlock} />
+                <p>
+                    To display a keyboard input, you can use the <code>&lt;kbd&gt;</code> tag.
+                </p>
+                <PrismCodeBlock codeBlock={typographyCodeBlocks.kbdCodeBlock} />
+                <p>
+                    To illustrate a Sample output, utilize the <code>&lt;samp&gt;</code> tag.
+                </p>
+                <PrismCodeBlock codeBlock={typographyCodeBlocks.sampCodeBlock} />
+                <p>
+                    To illustrate a Sample output, utilize the <code>&lt;var&gt;</code> tag.
+                </p>
+                <PrismCodeBlock codeBlock={typographyCodeBlocks.varCodeBlock} />
+            </section>
+            <section>
                 <h4>Fluid typography</h4>
                 <p>
                     The frameowrk also provides fluid typography feature (with no media queries). If you have wide screen monitor (at least 1440px wide), try resizing the browser window, you'll see font size reducing without any stepping observed as you reduce the width.

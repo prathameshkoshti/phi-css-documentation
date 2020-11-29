@@ -59,9 +59,11 @@ export default function links() {
                     To create a grey link use <code>.link-grey</code> in the <code>&lt;a&gt;</code> tag.
                 </p>
                 <PrismCodeBlock codeBlock={linksCodeBlocks.greyLinkCodeBlock} />
-                <p className="note">
-                    To use other types of links other than the primary it is necessary to add <code>.link</code> class to have the basic styling for the link and the other class will override the styling as per specified class.
-                </p>
+                <div className="note">
+                    <p>
+                        To use other types of links other than the primary it is necessary to add <code>.link</code> class to have the basic styling for the link and the other class will override the styling as per specified class.
+                    </p>
+                </div>
             </section>
         </CommonDocsLayout>
     )
