@@ -9,9 +9,8 @@ export default class NavItem extends Component {
 
         if(subLink === this.props.currentActiveItem) {
             activeItemStyle = {
-                backgroundColor: 'var(--accent)',
-                color: 'var(--accent-shade)',
-                fontWeight: 500
+                color: 'var(--accent)',
+                fontWeight: 600
             }
         }
 

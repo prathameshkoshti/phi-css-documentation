@@ -157,10 +157,6 @@ footer {
     display: none;
 }
 
-a {
-    font-weight: 500;
-}
-
 .code-output {
     padding: 1rem;
     border-radius: 5px;

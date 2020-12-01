@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Fira Code';
+    src: url('/fonts/Fira_Code/FiraCode-Light.ttf') format("truetype");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('/fonts/Fira_Code/FiraCode-Regular.ttf') format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('/fonts/Fira_Code/FiraCode-Medium.ttf') format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('/fonts/Fira_Code/FiraCode-SemiBold.ttf') format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('/fonts/Fira_Code/FiraCode-Bold.ttf') format("truetype");
+    font-weight: 900;
+}
+
+/* Playfair display */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/PlayfairDisplay-Regular.ttf') format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/PlayfairDisplay-Italic.ttf') format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/PlayfairDisplay-SemiBold.ttf') format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/PlayfairDisplay-SemiBoldItalic.ttf') format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/PlayfairDisplay-Bold.ttf') format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/PlayfairDisplay-BoldItalic.ttf') format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/PlayfairDisplay-ExtraBold.ttf') format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/PlayfairDisplay-ExtraBoldItalic.ttf') format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/PlayfairDisplay-Black.ttf') format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/PlayfairDisplay-BlackItalic.ttf') format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Poppins */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-Thin.ttf') format("truetype");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-ThinItalic.ttf') format("truetype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-ExtraLight.ttf') format("truetype");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-ExtraLightItalic.ttf') format("truetype");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-Light.ttf') format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-LightItalic.ttf') format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-Regular.ttf') format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-Italic.ttf') format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-Medium.ttf') format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-MediumItalic.ttf') format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-SemiBold.ttf') format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-SemiBoldItalic.ttf') format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-Bold.ttf') format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-BoldItalic.ttf') format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-ExtraBold.ttf') format("truetype");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-ExtraBoldItalic.ttf') format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-Black.ttf') format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/Fira_Code/Poppins-BlackItalic.ttf') format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
