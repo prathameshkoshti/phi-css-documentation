@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Fira Code';
     src: url('/fonts/Fira_Code/FiraCode-Light.ttf') format("truetype");
-    font-weight: 100;
+    font-weight: 300;
 }
 
 @font-face {
     font-family: 'Fira Code';
     src: url('/fonts/Fira_Code/FiraCode-Regular.ttf') format("truetype");
-    font-weight: 300;
+    font-weight: 400;
 }
 
 @font-face {
@@ -19,65 +19,65 @@
 @font-face {
     font-family: 'Fira Code';
     src: url('/fonts/Fira_Code/FiraCode-SemiBold.ttf') format("truetype");
-    font-weight: 700;
+    font-weight: 600;
 }
 
 @font-face {
     font-family: 'Fira Code';
     src: url('/fonts/Fira_Code/FiraCode-Bold.ttf') format("truetype");
-    font-weight: 900;
+    font-weight: 700;
 }
 
 /* Playfair display */
 @font-face {
     font-family: 'Playfair Display';
     src: url('/fonts/Fira_Code/PlayfairDisplay-Regular.ttf') format("truetype");
-    font-weight: 300;
+    font-weight: 400;
 }
 
 @font-face {
     font-family: 'Playfair Display';
     src: url('/fonts/Fira_Code/PlayfairDisplay-Italic.ttf') format("truetype");
-    font-weight: 300;
+    font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Playfair Display';
     src: url('/fonts/Fira_Code/PlayfairDisplay-SemiBold.ttf') format("truetype");
-    font-weight: 500;
+    font-weight: 600;
 }
 
 @font-face {
     font-family: 'Playfair Display';
     src: url('/fonts/Fira_Code/PlayfairDisplay-SemiBoldItalic.ttf') format("truetype");
-    font-weight: 500;
+    font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Playfair Display';
     src: url('/fonts/Fira_Code/PlayfairDisplay-Bold.ttf') format("truetype");
-    font-weight: 600;
+    font-weight: 700;
 }
 
 @font-face {
     font-family: 'Playfair Display';
     src: url('/fonts/Fira_Code/PlayfairDisplay-BoldItalic.ttf') format("truetype");
-    font-weight: 600;
+    font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Playfair Display';
     src: url('/fonts/Fira_Code/PlayfairDisplay-ExtraBold.ttf') format("truetype");
-    font-weight: 700;
+    font-weight: 800;
 }
 
 @font-face {
     font-family: 'Playfair Display';
     src: url('/fonts/Fira_Code/PlayfairDisplay-ExtraBoldItalic.ttf') format("truetype");
-    font-weight: 700;
+    font-weight: 800;
     font-style: italic;
 }
 
