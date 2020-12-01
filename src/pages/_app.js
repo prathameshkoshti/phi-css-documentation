@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 
 // css imports
 import 'phi-css/dist/phi.min.css';
+import '../css/font.css';
 import '../css/docs.css';
 import '../css/icons.css';
 import "../css/prism.css";
