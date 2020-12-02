@@ -27,7 +27,7 @@ export default function links() {
                     To create different links, use respective class associated witht the type along with the <code>&lt;a&gt;</code> tag. This how different types of links look like in action:
                 </p>
                 <div className="code-output links-code-output flex flex-wrap">
-                    <a href="#" className="link">Primary link</a>
+                    <a href="#" className="link link-primary">Primary link</a>
                     <a href="#" className="link link-secondary">Secondary link</a>
                     <a href="#" className="link link-info">Info link</a>
                     <a href="#" className="link link-success">Success link</a>

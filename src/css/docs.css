@@ -63,6 +63,10 @@ nav .nav-item {
     margin-bottom: 3rem;
 }
 
+.docs-content > article section > p {
+    font-weight: 300;
+}
+
 .page-header {
     position: absolute;
     padding: 4rem 4rem 0;

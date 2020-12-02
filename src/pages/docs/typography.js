@@ -26,7 +26,7 @@ export default function typography() {
                         By default it uses sans-serif font for all sort of texts. (Wait what? Default font set to sans-serif, does that mean you can have serif font as well? <strong>Well, yes!</strong>)
                     </li>
                     <li>
-                        In this framework, Poppins is the sans-serif font, whereas the Playfair Display being used as a serif font. You can customize this as well, visit this <Link href="/docs/customizations"><a>customization section</a></Link>.
+                        In this framework, Poppins is the sans-serif font, whereas the Playfair Display being used as a serif font. You can customize this as well, visit this <Link href="/docs/customizations"><a className="link link-primary">customization</a></Link> section.
                     </li>
                 </ul>
             </section>

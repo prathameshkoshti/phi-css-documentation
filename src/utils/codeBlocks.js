@@ -228,7 +228,7 @@ export const typographyCodeBlocks = {
 
 export const linksCodeBlocks = {
     linkCodeBlock: {
-        code: `<span>This is how a <a class="link" href="#">Link</a> looks like</span>`,
+        code: `<span>This is how a <a class="link link-primary" href="#">Link</a> looks like</span>`,
         language: 'html',
         isOutputVisible: true
     },

@@ -8,7 +8,7 @@ export default function base() {
         <CommonDocsLayout currentPageId="base" pageHeader="Base">
             <section>
                 <p>
-                    This framework is built on top of <a target="_blank" href="https://necolas.github.io/normalize.css/">Normalize.css</a>, which acts as the CSS reset to maintain consistency accross the browsers. If you wish to know more about it then head over this <a href="http://nicolasgallagher.com/about-normalize-css/" target="_blank">guide</a>, you can find the repository link in this guide as well.
+                    This framework is built on top of <a className="link link-primary" target="_blank" href="https://necolas.github.io/normalize.css/">Normalize.css</a>, which acts as the CSS reset to maintain consistency accross the browsers. If you wish to know more about it then head over this <a href="http://nicolasgallagher.com/about-normalize-css/" target="_blank">guide</a>, you can find the repository link in this guide as well.
                 </p>
                 <p>
                     Since the whole framework is made using SASS (a CSS preprocessor), this framework did not use the CSS version of the Normalize.css, but the SCSS version. Also it is the optimized version of Normalize.css to reduce the file size.

@@ -9,7 +9,7 @@ export default function grid() {
         <CommonDocsLayout currentPageId="grid" pageHeader="Grid">
             <section>
                 <p>
-                    The whole grid is fabricated using the number <strong>1.618</strong>. If you want to know more about how it was curated, visit the <Link href="/idea"><a>Idea</a></Link>.
+                    The whole grid is fabricated using the number <strong>1.618</strong>. If you want to know more about how it was curated, visit the <Link href="/idea"><a className="link link-primary">Idea</a></Link>.
                 </p>
             </section>
             <section>
@@ -123,7 +123,7 @@ export default function grid() {
                 <code>.phi-col-8</code> and <code>.phi-col-7</code>
                 <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo6Code} />
 
-                <p>You might have a question in your mind, what about equally distributed columns? Is it possible with this framework? No not really possible because of phi's irrational nature. But there is a kind of tweak you can do to achieve this, with the help of utility classes. Read more about it <Link href="/docs/utilities"><a>here</a></Link>. You can combine the utility classes functionality to achieve the desired equally distributed layout at certain point. For example,</p>
+                <p>You might have a question in your mind, what about equally distributed columns? Is it possible with this framework? No not really possible because of phi's irrational nature. But there is a kind of tweak you can do to achieve this, with the help of utility classes. Read more about it <Link href="/docs/utilities"><a className="link link-primary">here</a></Link>. You can combine the utility classes functionality to achieve the desired equally distributed layout at certain point. For example,</p>
 
                 <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo7Code} />
             </section>

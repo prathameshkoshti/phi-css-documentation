@@ -24,7 +24,7 @@ export default function inception() {
                 <p>
                     You are free to do major as well as minor customizations within the framework. If you don't want to utilize all the features, you can import the specific modules based on your requirements. Yes! The framework is entirely modularized.
                 </p>
-                <p>Refer this link to know more about the <Link href="/docs/customizations"><a>customizations</a></Link>.</p>
+                <p>Refer this link to know more about the <Link href="/docs/customizations"><a className="link link-primary">customizations</a></Link>.</p>
             </section>
         </CommonDocsLayout>
     )

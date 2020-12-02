@@ -10,7 +10,7 @@ export default function Custom404() {
                 Okay wait! It looks like you have lost your way.
             </div>
             <div>
-                Let's go back to the <Link href="/"><a>homepage</a></Link>
+                Let's go back to the <Link href="/"><a className="link link-primary">homepage</a></Link>
             </div>
         </div>
     )
