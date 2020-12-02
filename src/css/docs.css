@@ -64,7 +64,7 @@ nav .nav-item {
 }
 
 .docs-content > article section > p,
-.docs-content > article section > li {
+.docs-content > article section li {
     font-weight: 300;
 }
 
