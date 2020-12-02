@@ -32,6 +32,10 @@ a.active span {
     margin-bottom: 1rem;
 }
 
+.docsLink span {
+    font-weight: 300;
+}
+
 .downArrow {
     position: relative;
     top: -5px;
