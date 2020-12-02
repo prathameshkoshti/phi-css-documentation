@@ -63,7 +63,8 @@ nav .nav-item {
     margin-bottom: 3rem;
 }
 
-.docs-content > article section > p {
+.docs-content > article section > p,
+.docs-content > article section > li {
     font-weight: 300;
 }
 
