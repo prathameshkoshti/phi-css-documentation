@@ -162,6 +162,10 @@ pre > code {
 	margin: 0 0 var(--rem-mul-phi) 0;
 }
 
+.code-output li, .code-output p {
+	font-weight: 400 !important;
+}
+
 .links-code-output {
 	gap: 15px;
 }

@@ -4,10 +4,7 @@
     padding: var(--rem-mul-phi) 0;
     margin-right: -999px;
     padding-right: 999px;
-    background-color: ghostwhite;
     background-color: var(--light);
-    /* border-left: 1px solid; */
-    /* border-color: var(--light); */
     height: 100vh;
 }
 
@@ -32,8 +29,12 @@ a.active span {
     margin-bottom: 1rem;
 }
 
-.docsLink span {
+.docsLink span, .docsSubLinks li {
     font-weight: 300;
+}
+
+.docsSubLinks a.active li {
+    font-weight: bold;
 }
 
 .downArrow {
