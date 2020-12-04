@@ -1,6 +1,6 @@
 import React from 'react';
 import PrismCodeBlock from '../../components/PrismCodeBlock';
-import { darkModeCodeBlock } from '../../utils/codeBlocks';
+import { darkModeCodeBlocks } from '../../utils/codeBlocks';
 import CommonDocsLayout from '../../components/CommonDocsLayout';
 
 export default function dark_mode() {
@@ -13,17 +13,17 @@ export default function dark_mode() {
                 <p>
                     Since the main css file from this framework (which goes with the name <code>phi.css</code> or <code>phi.min.css</code>), doesn't have the dark mode css included in it, to keep the functionality focused on specific elements. You need to include the other file with having the name <code>phi-dark.css</code> or <code>phi-dark.min.css</code>.
                 </p>
-                <PrismCodeBlock codeBlock={darkModeCodeBlock.includeDarkMode} />
+                <PrismCodeBlock codeBlock={darkModeCodeBlocks.includeDarkMode} />
                 <p>If you want it to import it using javascript import you can use it this way:</p>
-                <PrismCodeBlock codeBlock={darkModeCodeBlock.importDarkMode} />
+                <PrismCodeBlock codeBlock={darkModeCodeBlocks.importDarkMode} />
                 <p>
                     Add the class <code>.dark</code> to the container element for which you need to enable the dark mode.
                 </p>
-                <PrismCodeBlock codeBlock={darkModeCodeBlock.bodyClassCodeBlock} />
+                <PrismCodeBlock codeBlock={darkModeCodeBlocks.bodyClassCodeBlock} />
                 <p>
                     Generally, dark mode is enabled for the whole page. But if you have any specific requirement, then you can enable it to any specific section or any div by adding the <code>.dark</code> class in the class list of that particular element, this way:
                 </p>
-                <PrismCodeBlock codeBlock={darkModeCodeBlock.divClassCodeBlock} />
+                <PrismCodeBlock codeBlock={darkModeCodeBlocks.divClassCodeBlock} />
                 <p>Want to see how it actually looks in action, head over to this website.</p>
             </section>
         </CommonDocsLayout>

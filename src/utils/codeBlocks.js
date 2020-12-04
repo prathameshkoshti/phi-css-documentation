@@ -1,3 +1,5 @@
+import utilities from "../pages/docs/utilities"
+
 export const sampleCode = {
     code: `.class {
   property: value;
@@ -460,7 +462,7 @@ export const tableCodeBlocks= {
     }
 }
 
-export const darkModeCodeBlock = {
+export const darkModeCodeBlocks = {
     importDarkMode: {
         code: `import 'phi-css/dist/phi.css';`,
         language: 'javascript',
