@@ -462,6 +462,67 @@ export const tableCodeBlocks= {
     }
 }
 
+export const utilitiesCodeBlocks = {
+    fullWidthCodeBlock: {
+        code: '<div class="phi-full-width"></div>',
+        language: 'html',
+        isOutputVisible: false,
+    },
+
+    cssVariableFontsCodeBlock: {
+        code: `--serif-font: "Playfair Display", Times, serif;
+--sans-serif-font: "Poppins", Arial, Helvetica, sans-serif;
+--monospace-font: "Fira Code", Courier, monospace;`,
+        language: 'css',
+        isOutputVisible: false,
+    },
+
+    cssVariablePhiCodeBlock: {
+        code: `--phi: 1.618;
+--rem-mul-phi: 1rem * $phi;
+--rem-div-phi: 1rem / $phi;`,
+        language: 'css',
+        isOutputVisible: false,
+    },
+
+    cssVariableTransitionCodeBlock: {
+        code: `--transition: 0.3s ease-in-out;`,
+        language: 'css',
+        isOutputVisible: false,
+    },
+
+    cssVariableColorsCodeBlock: {
+        code: `--dark: #242831;
+--light: #F8F8FF;
+
+--accent: #7A65FB;
+--accent-tint: #CCC4FD;
+--accent-shade: #2f2760;
+
+--info: #3EAEFF;
+--info-tint: #B5E0FF;
+--info-shade: #184261;
+
+--success: #00DD8D;
+--success-tint: #9EF2D3;
+--success-shade: #005436;
+
+--error: #FF6666;
+--error-tint: #FFC5C5;
+--error-shade: #612727;
+
+--warning: #FF9559;
+--warning-tint: #FFD7C0;
+--warning-shade: #613922;
+
+--grey: #B5B5B5;
+--grey-tint: #E3E3E3;
+--grey-shade: #454545;`,
+        language: 'css',
+        isOutputVisible: false,
+    }
+}
+
 export const darkModeCodeBlocks = {
     importDarkMode: {
         code: `import 'phi-css/dist/phi.css';`,

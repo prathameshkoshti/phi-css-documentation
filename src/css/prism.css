@@ -29,6 +29,12 @@ pre[class*="language-"] {
 	-ms-hyphens: none;
 	hyphens: none;
 
+	overflow: auto;
+}
+code[class*="language-"]::-webkit-scrollbar,
+pre[class*="language-"]::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 code[class*="language-"] {
