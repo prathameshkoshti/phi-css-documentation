@@ -459,3 +459,26 @@ export const tableCodeBlocks= {
         isOutputVisible: true,
     }
 }
+
+export const darkModeCodeBlock = {
+    importDarkMode: {
+        code: `import 'phi-css/dist/phi.css';`,
+        language: 'javascript',
+        isOutputVisible: false,
+    },
+    includeDarkMode: {
+        code: `<link href="https://unpkg.com/phi-css@1.0.0/dist/phi.css" rel="stylesheet">`,
+        language: 'html',
+        isOutputVisible: false,
+    },
+    bodyClassCodeBlock: {
+        code: '<body className="dark"></body>',
+        language: 'html',
+        isOutputVisible: false,
+    },
+    divClassCodeBlock: {
+        code: '<div className="dark"></div>',
+        language: 'html',
+        isOutputVisible: false,
+    }
+}
