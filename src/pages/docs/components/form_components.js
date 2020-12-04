@@ -16,27 +16,27 @@ export default function form_components() {
                 <div className="code-output">
                     <div className="form-input">
                         <label>Password</label>
-                        <input type="password" placeholder="**********" value="**********" />
+                        <input type="password" placeholder="**********" defaultValue="**********" />
                     </div>
                     <div className="form-input">
                         <label>Email</label>
-                        <input type="email" placeholder="prathameshkoshti@gmail.com" value="prathameshkoshti@gmail.com" />
+                        <input type="email" placeholder="prathameshkoshti@gmail.com" defaultValue="prathameshkoshti@gmail.com" />
                     </div>
                     <div className="form-input">
                         <label>Search</label>
-                        <input type="search" placeholder="prathamesh koshti" value="prathamesh koshti" />
+                        <input type="search" placeholder="prathamesh koshti" defaultValue="prathamesh koshti" />
                     </div>
                     <div className="form-input">
                         <label>Number</label>
-                        <input type="number" placeholder="123" value="123" />
+                        <input type="number" placeholder="123" defaultValue="123" />
                     </div>
                     <div className="form-input">
                         <label>Phone number</label>
-                        <input type="tel" placeholder="1234567890" value="1234567890" />
+                        <input type="tel" placeholder="1234567890" defaultValue="1234567890" />
                     </div>
                     <div className="form-input">
                         <label>Website</label>
-                        <input type="url" placeholder="https://www.prathameshkoshti.com" value="https://www.prathameshkoshti.com" />
+                        <input type="url" placeholder="https://www.prathameshkoshti.com" defaultValue="https://www.prathameshkoshti.com" />
                     </div>
                     <div className="form-input">
                         <label>Select profession</label>
@@ -47,7 +47,10 @@ export default function form_components() {
                     </div>
                     <div className="form-input">
                         <label>About</label>
-                        <textarea></textarea>
+                        <textarea>
+                            sometimes web developer...
+                            sometimes ui/ux designer...
+                        </textarea>
                     </div>
                 </div>
                 <p>
