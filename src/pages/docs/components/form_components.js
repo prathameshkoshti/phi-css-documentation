@@ -47,10 +47,7 @@ export default function form_components() {
                     </div>
                     <div className="form-input">
                         <label>About</label>
-                        <textarea>
-                            sometimes web developer...
-                            sometimes ui/ux designer...
-                        </textarea>
+                        <textarea defaultValue={`sometimes web developer...\nsometimes ui/ux designer...`}></textarea>
                     </div>
                 </div>
                 <p>

@@ -76,10 +76,10 @@ export default function buttons() {
                     <button className="button button-ghost button-disabled" disabled title="Ghost Button">Ghost Button</button>
                     <button className="button button-grey button-disabled" disabled title="Grey Button">Grey Button</button>
                     <br />
-                    <button class="button button-info button-disabled" disabled title="Info button">Info Button</button>
-                    <button class="button button-success button-disabled" disabled title="Success Button">Success Button</button>
-                    <button class="button button-warning button-disabled" disabled title="Warning Button">Warning Button</button>
-                    <button class="button button-error button-disabled" disabled title="Error Button">Error Button</button>
+                    <button className="button button-info button-disabled" disabled title="Info button">Info Button</button>
+                    <button className="button button-success button-disabled" disabled title="Success Button">Success Button</button>
+                    <button className="button button-warning button-disabled" disabled title="Warning Button">Warning Button</button>
+                    <button className="button button-error button-disabled" disabled title="Error Button">Error Button</button>
                 </div>
                 <div className="note">
                     <p>
