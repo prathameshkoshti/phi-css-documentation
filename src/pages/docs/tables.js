@@ -17,7 +17,7 @@ export default function tables() {
                     Responsive tables
                 </h4>
                 <p>
-                    To make the table responsive you need to wrap the table with a div having the class <code>.table-responsive</code>
+                    To make the table responsive, you need to wrap the table with a div having the class <code>.table-responsive</code>.
                 </p>
                 <PrismCodeBlock codeBlock={tableCodeBlocks.responsiveTableCodeBlock} />
             </section>

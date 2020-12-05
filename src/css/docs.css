@@ -363,7 +363,7 @@ footer {
 
     .nav-item:hover {
         background: var(--accent);
-        color: var(--light);
+        color: var(--light) !important;
     }
 
     .nav-item.active {

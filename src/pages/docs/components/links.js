@@ -9,7 +9,7 @@ export default function links() {
             <section>
                 <h4>Links</h4>
                 <p>
-                    You are free to create following types of links:
+                    You are free to create the following types of links:
                 </p>
                 <ul>
                     <li>Primary link</li>
@@ -20,11 +20,11 @@ export default function links() {
                     <li>Error link</li>
                 </ul>
                 <p>
-                    Use a simple <code>&lt;a&gt;</code> tag with a class as <code>.link</code>. By default a link will be primary in nature.
+                    Use a simple <code>&lt;a&gt;</code> tag with a class as <code>.link</code>. By default, a link will be primary in nature.
                 </p>
                 <PrismCodeBlock codeBlock={linksCodeBlocks.linkCodeBlock} />
                 <p>
-                    To create different links, use respective class associated witht the type along with the <code>&lt;a&gt;</code> tag. This how different types of links look like in action:
+                    To create different links, use respective class associated with the type along with the <code>&lt;a&gt;</code> tag. This how different types of links look like in action:
                 </p>
                 <div className="code-output links-code-output flex flex-wrap">
                     <a href="#" className="link link-primary">Primary link</a>
@@ -61,7 +61,7 @@ export default function links() {
                 <PrismCodeBlock codeBlock={linksCodeBlocks.greyLinkCodeBlock} />
                 <div className="note">
                     <p>
-                        To use other types of links other than the primary it is necessary to add <code>.link</code> class to have the basic styling for the link and the other class will override the styling as per specified class.
+                        To use other types of links other than the primary then it is necessary to add <code>.link</code> class to have the basic styling for the link, the other class will override the styling as per specified class.
                     </p>
                 </div>
             </section>

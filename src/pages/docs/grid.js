@@ -9,23 +9,23 @@ export default function grid() {
         <CommonDocsLayout currentPageId="grid" pageHeader="Grid">
             <section>
                 <p>
-                    The whole grid is fabricated using the number <strong>1.618</strong>. If you want to know more about how it was curated, visit the <Link href="/idea"><a className="link link-primary">Idea</a></Link>.
+                    The whole grid fabricated using the number <strong>1.618</strong>. If you want to know more about how was it curated, visit the <Link href="/idea"><a className="link link-primary">Idea</a></Link>.
                 </p>
             </section>
             <section>
                 <h4>Row</h4>
                 <p>
-                    When you define a container for your webpage, you can add rows in it. The row uses flexbox layout to hold multiple columns within itself. To add a row inside your container add a <code>.row</code> class to a div like this:
+                    When you define a container for your webpage, you can add rows in it. The row uses flexbox layout to hold multiple columns within itself. To add a row inside your container, add a <code>.row</code> class to a div like this:
                 </p>
                 <PrismCodeBlock codeBlock={gridCodeBlocks.rowCode} />
             </section>
             <section>
                 <h4>Columns</h4>
                 <p>
-                    In this framework, columns are divided using the number <strong>1.618</strong>. Since the number is irrational in nature, the grid cannot be divided/broken into 12-columns or 24-columns layout, which is general concept of any grid (Most CSS frameworks follow this mechanism).
+                    In this framework, columns are divided using the number <strong>1.618</strong>. Since the number is irrational in nature, the grid cannot be divided/broken into 12-columns or 24-columns layout, which is a general concept of any grid (Most CSS frameworks follow this mechanism).
                 </p>
                 <p>
-                    This might seem different than what we are generally used to. But this grid system will enable user to divide the container using the golden ratio. To use columns in the <code>.row</code>, you can use a div element with class <code>.phi-col-*</code>, * can be from 1 to 10, base, xl, lg, md, sm and xs.
+                    This might seem different than what we are generally used to. But this grid system will enable a user to divide the container using the golden ratio. To use columns in the <code>.row</code>, you can use a div element with class <code>.phi-col-*</code>, * can be from 1 to 10, base, xl, lg, md, sm and xs.
                 </p>
                 <ul>
                     <li>
@@ -45,7 +45,7 @@ export default function grid() {
                     </li>
                 </ul>
                 <p>
-                    Here's how they look in action, try to resize the browser window if you are visiting the documentation from desktop, the columns will acquire the 100% width when the screen width reaches <code>765px</code> breakpoint
+                    Here's how they look in action, try to resize the browser window if you are visiting the documentation from desktop, the columns will acquire the 100% width when the screen width reaches <code>765px</code> breakpoint.
                 </p>
                 <div className="code-output">
                     <div className="row">
@@ -99,7 +99,7 @@ export default function grid() {
                 </div>
                 <div className="note">
                     <p>
-                        As you might have noticed, from <code>.phi-col-4</code> to <code>.phi-col-1</code> the width is too small to fit any content in it, probably these won't be used much in the webpages. So the most usable columns lie above the column <code>.phi-col-4</code>.
+                        As you might have noticed, from <code>.phi-col-4</code> to <code>.phi-col-1</code> the width is too small to fit any content in it, probably these columns won't be used much in the webpages. So the most usable columns lie above the column <code>.phi-col-4</code>.
                     </p>
                 </div>
                 <p>
@@ -123,7 +123,7 @@ export default function grid() {
                 <code>.phi-col-8</code> and <code>.phi-col-7</code>
                 <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo6Code} />
 
-                <p>You might have a question in your mind, what about equally distributed columns? Is it possible with this framework? No not really possible because of phi's irrational nature. But there is a kind of tweak you can do to achieve this, with the help of utility classes. Read more about it <Link href="/docs/utilities"><a className="link link-primary">here</a></Link>. You can combine the utility classes functionality to achieve the desired equally distributed layout at certain point. For example,</p>
+                <p>You might have a question in your mind, what about equally distributed columns? Is it possible with this framework? No not really possible because of phi's irrational nature. But there is a kind of tweak you can do to achieve this, with the help of utility classes. Read more about it <Link href="/docs/utilities"><a className="link link-primary">here</a></Link>. You can combine the utility classes functionality to achieve the desired equally distributed layout at a certain point. For example,</p>
 
                 <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo7Code} />
             </section>

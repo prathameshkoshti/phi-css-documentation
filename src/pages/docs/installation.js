@@ -9,11 +9,11 @@ export default function installation() {
         <CommonDocsLayout currentPageId="installation" pageHeader="Installation">
             <section>
                 <p>
-                    If you are building a website using a javascript framework, you can install this framework using the following npm command.
+                    If you are building a website using a javascript framework, you can install this framework using the following <code>npm install</code> command.
                 </p>
                 <PrismCodeBlock codeBlock={npmInstallCmd} />
                 <p>
-                    After installation of the package, you can import the CSS file using ES6 import:
+                    After installation of the package, you can import the CSS file using the ES6 import statement.
                 </p>
                 <PrismCodeBlock codeBlock={importCode} />
                 <p>

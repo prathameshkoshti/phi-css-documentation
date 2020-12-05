@@ -9,10 +9,10 @@ export default function form_components() {
             <section>
                 <h4>Input field</h4>
                 <p>
-                    To render a input field, create a container which will hold the label and the input using a div with class <code>.form-input</code>. By default it will take whole width you can utilize the grid columns here to reduce the width.
+                    To render an input field, create a container which will hold the label and the input using a div with class <code>.form-input</code>. By default, it will take the whole width you can utilize the grid columns here to reduce the width.
                 </p>
                 <PrismCodeBlock codeBlock={formComponenetCodeBlocks.inputTextCodeBlock} />
-                <p>Similarly, you can create password field, email field, search field, url field, tel field and number fields, select field and textarea</p>
+                <p>Similarly, you can create password field, email field, search field, URL field, tel field and number fields, select field and text area.</p>
                 <div className="code-output">
                     <div className="form-input">
                         <label>Password</label>
@@ -51,11 +51,11 @@ export default function form_components() {
                     </div>
                 </div>
                 <p>
-                    To create checkboxes erap the checkbox and the label inside a div having class as <code>.form-checkbox</code>.
+                    To create checkboxes wrap the checkbox and the label inside a div having class as <code>.form-checkbox</code>.
                 </p>
                 <PrismCodeBlock codeBlock={formComponenetCodeBlocks.checkboxCodeBlock} />
                 <p>
-                    Similarly to above example, you can create a raio button by using the class <code>.form-radio</code>.
+                    Similarly to the above example, you can create a radio button by using the class <code>.form-radio</code>.
                 </p>
                 <PrismCodeBlock codeBlock={formComponenetCodeBlocks.radioCodeBlock} />
             </section>

@@ -32,7 +32,7 @@ export default function buttons() {
                     <button className="button button-error" title="Error Button">Error Button</button>
                 </div>
                 <p>
-                    To create a button, use the <code>&lt;button&gt;</code> tag with class <code>.button</code>. By default the button will be primary button.
+                    To create a button, use the <code>&lt;button&gt;</code> tag with class <code>.button</code>. By default, the button will be the primary button.
                 </p>
                 <PrismCodeBlock codeBlock={buttonsCodeBlocks.buttonCodeBlock} />
                 <p>
@@ -48,7 +48,7 @@ export default function buttons() {
                 </p>
                 <PrismCodeBlock codeBlock={buttonsCodeBlocks.greyButtonCodeBlock} />
                 <p>
-                    To create a info button, add this class: <code>.button-info</code>.
+                    To create an info button, add this class: <code>.button-info</code>.
                 </p>
                 <PrismCodeBlock codeBlock={buttonsCodeBlocks.infoButtonCodeBlock} />
                 <p>
@@ -60,7 +60,7 @@ export default function buttons() {
                 </p>
                 <PrismCodeBlock codeBlock={buttonsCodeBlocks.warningButtonCodeBlock} />
                 <p>
-                    To create a error button, add this class: <code>.button-error</code>.
+                    To create an error button, add this class: <code>.button-error</code>.
                 </p>
                 <PrismCodeBlock codeBlock={buttonsCodeBlocks.errorButtonCodeBlock} />
                 <p>
@@ -83,7 +83,7 @@ export default function buttons() {
                 </div>
                 <div className="note">
                     <p>
-                        To utilize the other types of button other than the primary it is necessary to add <code>.button</code> class to have the basic styling for the button and the other class will  override the styling as per specified class.
+                        To utilize the other types of button other than the primary then it is necessary to add <code>.button</code> class to have the basic styling for the button, the other class will override the styling as per specified class.
                     </p>
                 </div>
             </section>

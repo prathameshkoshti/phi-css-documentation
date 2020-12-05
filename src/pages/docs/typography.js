@@ -10,7 +10,7 @@ export default function typography() {
             <section>
                 <h4>General configurations</h4>
                 <p>
-                    In the framework there are few significant things set globally for the typography:
+                    In the framework, there are few significant things set globally for the typography:
                 </p>
                 <ul>
                     <li>
@@ -20,10 +20,10 @@ export default function typography() {
                         <code>letter-spacing</code> and <code>word-spacing</code> are derived using the golden ratio.
                     </li>
                     <li>
-                        Also, the pargraph width is derived using the golden ratio.
+                        Also, the paragraph width is derived using the golden ratio.
                     </li>
                     <li>
-                        By default it uses sans-serif font for all sort of texts. (Wait what? Default font set to sans-serif, does that mean you can have serif font as well? <strong>Well, yes!</strong>)
+                        By default, it uses sans-serif font for all sort of texts. (Wait what? Default font set to sans-serif, does that mean you can have serif font as well? <strong>Well, yes!</strong>)
                     </li>
                     <li>
                         In this framework, Poppins is the sans-serif font, whereas the Playfair Display being used as a serif font. You can customize this as well, visit this <Link href="/docs/customizations"><a className="link link-primary">customization</a></Link> section.
@@ -75,7 +75,7 @@ export default function typography() {
             <section>
                 <h4>Fluid typography</h4>
                 <p>
-                    The frameowrk also provides fluid typography feature (with no media queries). If you have wide screen monitor (at least 1440px wide), try resizing the browser window, you'll see font size reducing without any stepping observed as you reduce the width.
+                    The framework also provides a fluid typography feature (with no media queries). If you have a widescreen monitor (at least 1440px wide), try resizing the browser window, you'll see font size reducing without any stepping observed as you minimize the viewport width.
                 </p>
             </section>
             <section>
@@ -83,13 +83,13 @@ export default function typography() {
                     Contrasting typography
                 </h4>
                 <p>
-                    There are three types of fonts combination, the one you are seeing now is the default one, which uses sans-serif for both heading elements and other elements.
+                    There are three types of fonts combination, the one you which is visible to you now is the default one, which uses sans-serif for both heading elements and other elements.
                 </p>
                 <p>
-                    The second one uses combination of serif and sans-serif font, heading elements i.e. h1, h2, h3, h4, h5, h6 will have serif font and others will have sans-serif font.
+                    The second one uses a combination of serif and sans-serif font, heading elements i.e. h1, h2, h3, h4, h5, h6 will have serif font and others will have sans-serif font.
                 </p>
                 <p>
-                    The third one will also use both font styles but heading elements will have sans-serif style whereas others will have the serif font.
+                    The third one will also use both font styles but, heading elements will have sans-serif style whereas, others will have the serif font.
                 </p>
                 <p>
                     To make use of it add any one of the above class to a body tag or a div tag (if you don't want it globally). The examples are shown below (here it is applied to a div tag.)

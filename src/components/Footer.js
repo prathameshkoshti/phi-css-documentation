@@ -6,7 +6,7 @@ export default class Footer extends Component {
     render() {
         return (
             <footer className="footer full-width justify-content-space-between align-items-center">
-                <span>Made with 💜 &nbsp;using SASS.</span>
+                <span>built with 💜 using SASS.</span>
                 <div className="footer-icons">
                     <Link href={npmLink}>
                         <a target="_blank" className="footer-icon">

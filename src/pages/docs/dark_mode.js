@@ -8,10 +8,10 @@ export default function dark_mode() {
         <CommonDocsLayout currentPageId="dark_mode" pageHeader="Dark mode">
             <section>
                 <p>
-                    It is easy to enable the dark mode, just follow these two steps and dark mode can be enabled in your web app:
+                    It is easy to enable the dark mode, follow these two steps so that dark mode can be enabled in your web app:
                 </p>
                 <p>
-                    Since the main css file from this framework (which goes with the name <code>phi.css</code> or <code>phi.min.css</code>), doesn't have the dark mode css included in it, to keep the functionality focused on specific elements. You need to include the other file with having the name <code>phi-dark.css</code> or <code>phi-dark.min.css</code>.
+                    Since the main CSS file from this framework (which goes with the name <code>phi.css</code> or <code>phi.min.css</code>), doesn't have the dark mode CSS included in it, to keep the functionality focused on specific elements. You need to include the other file with having the name <code>phi-dark.css</code> or <code>phi-dark.min.css</code>.
                 </p>
                 <PrismCodeBlock codeBlock={darkModeCodeBlocks.includeDarkMode} />
                 <p>If you want it to import it using javascript import you can use it this way:</p>
