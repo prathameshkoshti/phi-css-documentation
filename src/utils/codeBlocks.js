@@ -194,7 +194,7 @@ export const typographyCodeBlocks = {
     },
 
     sampCodeBlock: {
-        code: `<samp>This is a output.</samp>`,
+        code: `<samp>This is an output.</samp>`,
         language: 'html',
         isOutputVisible: true,
     },

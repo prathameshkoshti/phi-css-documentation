@@ -17,17 +17,17 @@ export default function utilities() {
                 <ul>
                     <li>
                         <h5>Phi variables</h5>
-                        <span>These variables are generally used for applying the margin and padding for an element.</span>
+                        <p>These variables are generally used for applying the margin and padding for an element.</p>
                         <PrismCodeBlock codeBlock={utilitiesCodeBlocks.cssVariablePhiCodeBlock} />
                     </li>
                     <li>
                         <h5>Font family variables</h5>
-                        <span>By default it uses "Playfair display" for serif font, "Poppins" for sans-serif font and "Fira code" for monospace font.</span>
+                        <p>By default it uses "Playfair display" for serif font, "Poppins" for sans-serif font and "Fira code" for monospace font.</p>
                         <PrismCodeBlock codeBlock={utilitiesCodeBlocks.cssVariableFontsCodeBlock} />
                     </li>
                     <li>
                         <h5>Color variables</h5>
-                        <span>These are the the colors which are being used in the framework for elements link, button, font color.</span>
+                        <p>These are the the colors which are being used in the framework for elements link, button, font color.</p>
                         <PrismCodeBlock codeBlock={utilitiesCodeBlocks.cssVariableColorsCodeBlock} />
                     </li>
                 </ul>
@@ -46,6 +46,9 @@ export default function utilities() {
                         This <code>.phi-full-width</code> will take up width of viewport width i.e. <code>100vw</code>
                     </p>
                 </div>
+                <p>
+                    Checkout this <a className="link link-primary" href="">example</a> to see how it looks like.
+                </p>
             </section>
         </CommonDocsLayout>
     )
