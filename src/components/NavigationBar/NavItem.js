@@ -21,7 +21,7 @@ export default class NavItem extends Component {
                         <a className="nav-logo">
                             <img height="60px" src="/icons/header-logo.svg" />
                         </a>) : (
-                        <a className="nav-item" style={activeItemStyle} target={this.props.openInNewTab ? '_blank' : ''}>
+                        <a className="nav-item" onClick={() => this.props.handleNavMenu()} style={activeItemStyle} target={this.props.openInNewTab ? '_blank' : ''}>
                             {this.props.title}
                         </a>)
                 }

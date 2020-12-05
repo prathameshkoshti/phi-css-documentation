@@ -64,7 +64,7 @@ export default class NavBar extends Component {
                     </div>
                     <div className="nav-links" style={navMenuStyle}>
                     {
-                        navItems.map(navItem => <NavItem currentActiveItem={this.state.currentActiveItem} title={navItem.title} link={navItem.link} key={navItem.title} type="link" openInNewTab={navItem.openInNewTab} />)
+                        navItems.map(navItem => <NavItem handleNavMenu={this.handleNavMenu} currentActiveItem={this.state.currentActiveItem} title={navItem.title} link={navItem.link} key={navItem.title} type="link" openInNewTab={navItem.openInNewTab} />)
                     }
                         <div className="nav-icons">
                             <div className="nav-icon">
