@@ -47,7 +47,7 @@ export default function utilities() {
                     </p>
                 </div>
                 <p>
-                    Checkout this <a className="link link-primary" href="">example</a> to see how it looks like.
+                    Checkout this <a className="link link-primary" target="_blank" href="https://codepen.io/phi-css/pen/LYRNZGN">example</a> to see how it looks like.
                 </p>
             </section>
         </CommonDocsLayout>
