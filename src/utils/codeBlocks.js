@@ -1,23 +1,5 @@
 import utilities from "../pages/docs/utilities"
 
-export const sampleCode = {
-    code: `.class {
-  property: value;
-}
-#id {
-  property: value;
-}
-`,
-    language: 'css',
-    isOutputVisible: false
-}
-
-export const sampleHTMLCode = {
-    code: `<div class="container"></div>`,
-    language: 'html',
-    isOutputVisible: true
-}
-
 export const includePhiCode = {
     code: `<link href="https://unpkg.com/phi-css@1.0.0/dist/phi.css" rel="stylesheet">`,
     language: 'html',
@@ -42,7 +24,7 @@ export const importCode = {
 
 export const baseCodeBlocks = {
     containerCode: {
-        code: '<div class="container"></div>',
+        code: '<div class="phi-container"></div>',
         language: 'html',
         isOutputVisible: false,
     },

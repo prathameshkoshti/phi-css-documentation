@@ -5,7 +5,7 @@ import {npmLink, githubLink} from '../utils/siteData';
 export default class Footer extends Component {
     render() {
         return (
-            <footer className="footer full-width justify-content-space-between align-items-center">
+            <footer className="footer phi-full-width justify-content-space-between align-items-center">
                 <span>built with 💜 using SASS.</span>
                 <div className="footer-icons">
                     <Link href={npmLink}>

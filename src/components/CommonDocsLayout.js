@@ -15,7 +15,7 @@ export default class CommonDocsLayout extends Component {
 
         return (
             <div className="docs-contianer">
-                <div className="page-header full-width">
+                <div className="page-header phi-full-width">
                     <h3 style={headerStyle}>{this.props.pageHeader}</h3>
                     <div className="tint" style={docsBackground[this.props.currentPageId].tintStyle}>
                         {

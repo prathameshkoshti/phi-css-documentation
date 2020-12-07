@@ -54,7 +54,7 @@ export default class NavBar extends Component {
             }
         }
         return (
-            <nav className="full-width">
+            <nav className="phi-full-width">
                 <NavItem name="" link="/" type="logo" />
                 <div className="nav-links-container flex justify-content-space-between align-items-center">
                     <div className="hamburger-btn" onClick={this.handleNavMenu}>
