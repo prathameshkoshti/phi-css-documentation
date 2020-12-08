@@ -527,3 +527,51 @@ export const darkModeCodeBlocks = {
         isOutputVisible: false,
     }
 }
+
+export const customizationsCodeBlocks = {
+    gitCloneCodeBlock: {
+        code: 'git clone https://github.com/phi-css/phi-css.git',
+        language: 'command',
+        isOutputVisible: false,
+    },
+
+    phiVariableCodeBlock: {
+        code: '$phi: 1.618',
+        language: 'css',
+        isOutputVisible: false,
+    },
+
+    colorVariablesCodeBlock: {
+        code: `$dark: #242831;
+$light: #F8F8FF;
+$accent: #7A65FB;
+$info: #3EAEFF;
+$success: #00DD8D;
+$error: #FF6666;
+$warning: #FF9559;
+$grey: #B5B5B5;
+`,
+        language: 'css',
+        isOutputVisible: false,
+    },
+
+    fontFamiliesCodeBlock: {
+        code: `$sansSerifFont: "Poppins", Arial, Helvetica, sans-serif;
+$serifFont: "Playfair Display", Times, serif;
+$monospaceFont: "Fira Code", Courier, monospace;`,
+        language: 'css',
+        isOutputVisible: false,
+    },
+
+    transitionVariableCodeBlock: {
+        code: '$transition: 0.3s ease-in-out;',
+        language: 'css',
+        isOutputVisible: false,
+    },
+
+    gulpCommandCodeBlock: {
+        code: 'gulp',
+        language: 'command',
+        isOutputVisible: false,
+    }
+}

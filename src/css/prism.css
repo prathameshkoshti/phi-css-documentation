@@ -11,7 +11,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css */
 }
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #ccc;
+	color: var(--grey-tint);
 	background: none;
 	text-align: left;
 	white-space: pre;
@@ -157,7 +157,6 @@ pre > code {
 
 .code-block {
 	position: relative;
-	margin: 0 0 var(--rem-mul-phi) 0;
 }
 
 .code-block.with-output {

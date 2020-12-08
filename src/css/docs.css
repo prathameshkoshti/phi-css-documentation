@@ -1,6 +1,6 @@
 ::selection {
     background: var(--accent);
-    color: var(--accent-shade);
+    color: var(--accent-light);
 }
 
 body {
@@ -62,6 +62,17 @@ nav .nav-item {
 
 .docs-content > article section {
     margin-bottom: 3rem;
+}
+.docs-content > article section > section {
+    margin-bottom: 1rem;
+}
+
+.docs-content > article section > section > p {
+    margin-bottom: 1rem;
+}
+.docs-content > article section > section > p:last-child,
+.docs-content > article section > section > .code-block-contianer:last-child {
+    margin-bottom: var(--rem-mul-phi);
 }
 
 .docs-content > article section p,
@@ -216,9 +227,13 @@ footer {
     margin: var(--rem-div-phi) 0;
 }
 
-.note > code {
-    background: #B5B5B570;
-    color: var(--grey-shade);
+.note code {
+    background: var(--warning-shade);
+    color: var(--warning-tint);
+}
+
+.note .link-blockquote {
+    color: var(--warning-shade)
 }
 
 @media screen and (max-width: 1990px) {
