@@ -217,10 +217,11 @@ footer {
 
 .note {
     background: var(--warning-tint);
-    padding: var(--rem-mul-phi);
+    padding: var(--rem-div-phi) var(--rem-mul-phi);
     border-left: var(--rem-div-phi) solid var(--warning);
     color: var(--warning-shade);
     max-width: 100%;
+    margin: var(--rem-mul-phi) 0;
 }
 
 .note > p {
