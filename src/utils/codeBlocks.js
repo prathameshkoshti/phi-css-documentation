@@ -28,6 +28,11 @@ export const baseCodeBlocks = {
         language: 'html',
         isOutputVisible: false,
     },
+    fullWidthContainerCode: {
+        code: '<div class="phi-container-full"></div>',
+        language: 'html',
+        isOutputVisible: false,
+    },
     responsiveImageCode: {
         code: '<img class="phi-image" src="/images/M101.jpg"></img>',
         language: 'html',

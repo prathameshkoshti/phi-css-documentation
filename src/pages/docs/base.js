@@ -19,10 +19,20 @@ export default function base() {
             </section>
             <section>
             <h4>Contianer</h4>
-                <p>
-                    The most basic required element is the container, which uses <code>max-width: 960px</code>. It will be always horizontally centered in the page. You can utilize this container to hold your grid structure.
-                </p>
-                <PrismCodeBlock codeBlock={baseCodeBlocks.containerCode} />
+                <section>
+                    <h5>Standard container</h5>
+                    <p>
+                        The most basic required element is the container, which uses approx. <code>max-width: 82ch</code>. It will be always horizontally centered in the page. You can utilize this container to hold your grid structure.
+                    </p>
+                    <PrismCodeBlock codeBlock={baseCodeBlocks.containerCode} />
+                </section>
+                <section>
+                    <h5>Full iwdth container</h5>
+                    <p>
+                        This container will use available width up to <code>100vw</code>. So if you have a requirement of the full-screen web page, you can use this container to hold the grid.
+                    </p>
+                    <PrismCodeBlock codeBlock={baseCodeBlocks.fullWidthContainerCode} />
+                </section>
             </section>
             <section>
                 <h4>Responsive images</h4>
