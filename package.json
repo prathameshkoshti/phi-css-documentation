@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "next": "^10.0.3",
-    "phi-css": "^0.4.2",
+    "phi-css": "^0.4.6",
     "prismjs": "^1.22.0",
     "react": "17.0.1",
     "react-copy-to-clipboard": "^5.0.2",

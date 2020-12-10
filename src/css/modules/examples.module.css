@@ -1,14 +1,12 @@
 .exampleGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: var(--rem-mul-phi);
     margin: var(--rem-mul-phi);
     position: relative;
     top: var(--rem-mul-phi);
-}
-
-.exampleImage {
-    object-fit: cover;
+    margin: auto;
 }
 
 .example {
@@ -20,7 +18,7 @@
     border: 1px solid var(--grey-tint);
     border-radius: 5px;
     gap: 10px;
-    background: var(--light);
+    /* background: var(--light); */
     color: var(--dark);
     transition: var(--transition);
     overflow: hidden;

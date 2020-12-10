@@ -237,6 +237,18 @@ footer {
     color: var(--warning-shade)
 }
 
+.example-content {
+    padding: 5rem 3rem;
+}
+
+.example-content > h4, .example-content > p {
+    text-align: center;
+}
+
+.example-content > p {
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 1990px) {
     .docs-sidebar-container {
         margin-left: 80px;
