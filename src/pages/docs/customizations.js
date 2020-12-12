@@ -43,7 +43,7 @@ export default function customizations() {
                     </p>
                     <PrismCodeBlock codeBlock={customizationsCodeBlocks.colorVariablesCodeBlock} />
                     <p>
-                        Except for variables <code>$light</code> and <code>$dark</code>, tint and shades will be created for each standard colors. So if you modify these colors, tints and shades will be generated as per the specified color palette.
+                        Except for variables <code>$light</code> and <code>$dark</code>, tint and shades will be created for each standard colors. So if you modify these colors, tints and shades will be generated as per the specified color palette. Visit <Link href="/docs/colors"><a className="link link-primary">this</a></Link> page to know the colors that are used in this framework
                     </p>
                 </section>
                 <section>

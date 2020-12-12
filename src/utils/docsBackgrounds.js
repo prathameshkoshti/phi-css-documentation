@@ -142,6 +142,17 @@ export const docsBackground = {
             backgroundImage: 'radial-gradient(circle at bottom left, #ccc4fd66 0%, transparent 40%)',
         }
     },
+    colors: {
+        style: {
+            background: 'var(--accent)',
+            color: 'var(--accent-tint)',
+        },
+        tintStyle: {
+            opacity: 0.5,
+            backdroppFilter: 'blur(3px)',
+            backgroundImage: 'radial-gradient(circle at bottom left, #ccc4fd66 0%, transparent 40%)',
+        }
+    },
     customizations: {
         style: {
             backgroundColor: '#f8f8ff',

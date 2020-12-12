@@ -94,6 +94,11 @@ export const docsLinks = [
         link: 'dark_mode',
     },
     {
+        id: 'colors',
+        title: 'Colors',
+        link: 'colors',
+    },
+    {
         id: 'customizations',
         title: 'Customizations',
         link: 'customizations',

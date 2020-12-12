@@ -9,7 +9,7 @@ const examples = [
         id: 'blog',
         title: 'Blog',
         image: 'blog.png',
-        link: 'https://codepen.io/phi-css/pen/'
+        link: 'https://codepen.io/phi-css/pen/QWKGQyL'
     },
     {
         id: 'pricing',

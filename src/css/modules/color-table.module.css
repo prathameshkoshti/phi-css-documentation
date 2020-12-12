@@ -1,0 +1,6 @@
+.colorBlock {
+    --dimension: calc(3 * var(--rem-mul-phi));
+    width: var(--dimension);
+    height: var(--dimension);
+    margin-bottom: var(--rem-div-phi);
+}
