@@ -180,6 +180,11 @@ footer {
     border: 1px solid var(--grey-tint);
 }
 
+.code-output > .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .code-output > .row > div[class^="phi-col"] {
     position: relative;
     display: flex;
@@ -198,6 +203,10 @@ footer {
     text-align: center;
 }
 
+.code-output > .row > * {
+    padding: 0;
+}
+
 .row.justify-content-space-between > div[class^="phi-col"] {
     border-width: 1px;
 }
@@ -206,7 +215,7 @@ footer {
     border-right-width: 1px;
 }
 
-.phi-col-6::after, .phi-col-5::after, .phi-col-4::after, .phi-col-3::after, .phi-col-2::after, .phi-col-1::after {
+.phi-col-6::after, .phi-col-7::after {
     left: calc(100% + 20px);
     width: 100px;
 }
@@ -361,7 +370,7 @@ footer {
         border-bottom-width: 1px;
     }
 
-    .phi-col-6::after, .phi-col-5::after, .phi-col-4::after, .phi-col-3::after, .phi-col-2::after, .phi-col-1::after {
+    .phi-col-6::after, .phi-col-7::after {
         left: initial;
     }
 }

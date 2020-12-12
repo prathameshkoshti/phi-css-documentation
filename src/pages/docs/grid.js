@@ -25,23 +25,26 @@ export default function grid() {
                     In this framework, columns are divided using the number <strong>1.618</strong>. Since the number is irrational in nature, the grid cannot be divided/broken into 12-columns or 24-columns layout, which is a general concept of any grid (Most CSS frameworks follow this mechanism).
                 </p>
                 <p>
-                    This might seem different than what we are generally used to. But this grid system will enable a user to divide the container using the golden ratio. To use columns in the <code>.row</code>, you can use a div element with class <code>.phi-col-*</code>, * can be from 1 to 10, base, xl, lg, md, sm and xs.
+                    This might seem different than what we are generally used to. But this grid system will enable a user to divide the container using the golden ratio. To use columns in the <code>.row</code>, you can use a div element with class <code>.phi-col-*</code>, * can be from 1 to 7, base, xl, lg, md, sm and xs.
                 </p>
                 <ul>
                     <li>
-                        <code>.phi-col-base</code> column will occupy 100% of the container.
+                        <code>.phi-col-0</code> or <code>.phi-col-base</code> column will occupy 100% of the container.
                     </li>
                     <li>
-                        <code>.phi-col-10</code> column is equivalent to the <code>.phi-col-lg</code> column, both can be used alternatively.
+                        <code>.phi-col-1</code> column is equivalent to the <code>.phi-col-xl</code> column, both can be used alternatively.
                     </li>
                     <li>
-                        <code>.phi-col-9</code> column is equivalent to the <code>.phi-col-md</code> column, both can be used alternatively.
+                        <code>.phi-col-2</code> column is equivalent to the <code>.phi-col-lg</code> column, both can be used alternatively.
                     </li>
                     <li>
-                        <code>.phi-col-8</code> column is equivalent to the <code>.phi-col-sm</code> column, both can be used alternatively.
+                        <code>.phi-col-3</code> column is equivalent to the <code>.phi-col-md</code> column, both can be used alternatively.
                     </li>
                     <li>
-                        <code>.phi-col-7</code> column is equivalent to the <code>.phi-col-xs</code> column, both can be used alternatively.
+                        <code>.phi-col-4</code> column is equivalent to the <code>.phi-col-sm</code> column, both can be used alternatively.
+                    </li>
+                    <li>
+                        <code>.phi-col-5</code> column is equivalent to the <code>.phi-col-xs</code> column, both can be used alternatively.
                     </li>
                 </ul>
                 <p>
@@ -52,75 +55,64 @@ export default function grid() {
                         <div className="phi-col-base"></div>
                     </div>
                     <div className="row">
+                        <div className="phi-col-0"></div>
+                    </div>
+                    <div className="row">
                         <div className="phi-col-xl"></div>
                     </div>
                     <div className="row">
-                        <div className="phi-col-10"></div>
+                        <div className="phi-col-1"></div>
                     </div>
                     <div className="row">
                         <div className="phi-col-lg"></div>
                     </div>
                     <div className="row">
-                        <div className="phi-col-9"></div>
+                        <div className="phi-col-2"></div>
                     </div>
                     <div className="row">
                         <div className="phi-col-md"></div>
                     </div>
                     <div className="row">
-                        <div className="phi-col-8"></div>
+                        <div className="phi-col-3"></div>
                     </div>
                     <div className="row">
                         <div className="phi-col-sm"></div>
                     </div>
                     <div className="row">
-                        <div className="phi-col-7"></div>
+                        <div className="phi-col-4"></div>
                     </div>
                     <div className="row">
                         <div className="phi-col-xs"></div>
                     </div>
                     <div className="row">
-                        <div className="phi-col-6"></div>
-                    </div>
-                    <div className="row">
                         <div className="phi-col-5"></div>
                     </div>
                     <div className="row">
-                        <div className="phi-col-4"></div>
+                        <div className="phi-col-6"></div>
                     </div>
                     <div className="row">
-                        <div className="phi-col-3"></div>
+                        <div className="phi-col-7"></div>
                     </div>
-                    <div className="row">
-                        <div className="phi-col-2"></div>
-                    </div>
-                    <div className="row">
-                        <div className="phi-col-1"></div>
-                    </div>
-                </div>
-                <div className="note">
-                    <p>
-                        As you might have noticed, from <code>.phi-col-4</code> to <code>.phi-col-1</code> the width is too small to fit any content in it, probably these columns won't be used much in the webpages. So the most usable columns lie above the column <code>.phi-col-4</code>.
-                    </p>
                 </div>
                 <p>
                     Below are some of the possible combinations of the columns which can be used in the webpages:
                 </p>
-                <code>.phi-col-10</code> and <code>.phi-col-9</code>
+                <code>.phi-col-2</code> and <code>.phi-col-3</code>
                 <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo1Code} />
 
-                <code>.phi-col-10</code>, <code>.phi-col-8</code> and <code>.phi-col-7</code>
+                <code>.phi-col-2</code>, <code>.phi-col-4</code> and <code>.phi-col-5</code>
                 <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo2Code} />
 
-                <code>.phi-col-10</code>, <code>.phi-col-7</code>, <code>.phi-col-6</code> and <code>.phi-col-5</code>
+                <code>.phi-col-2</code>, <code>.phi-col-5</code>, <code>.phi-col-6</code> and <code>.phi-col-7</code>
                 <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo3Code} />
 
                 <code>.phi-col-md</code> and <code>.phi-col-sm</code>
                 <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo4Code} />
 
-                <code>.phi-col-9</code>, <code>.phi-col-8</code> and <code>.phi-col-7</code>
+                <code>.phi-col-3</code>, <code>.phi-col-4</code> and <code>.phi-col-5</code>
                 <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo5Code} />
 
-                <code>.phi-col-8</code> and <code>.phi-col-7</code>
+                <code>.phi-col-4</code> and <code>.phi-col-5</code>
                 <PrismCodeBlock codeBlock={gridCodeBlocks.colCombo6Code} />
 
                 <p>You might have a question in your mind, what about equally distributed columns? Is it possible with this framework? No not really possible because of phi's irrational nature. But there is a kind of tweak you can do to achieve this, with the help of utility classes. Read more about it <Link href="/docs/utilities"><a className="link link-primary">here</a></Link>. You can combine the utility classes functionality to achieve the desired equally distributed layout at a certain point. For example,</p>

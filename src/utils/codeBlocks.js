@@ -49,8 +49,8 @@ export const gridCodeBlocks = {
 
     colCombo1Code: {
         code: `<div class="row">
-    <div class="phi-col-10"></div>
-    <div class="phi-col-9"></div>
+    <div class="phi-col-2"></div>
+    <div class="phi-col-3"></div>
 </div>`,
         language: 'html',
         isOutputVisible: true,
@@ -58,9 +58,9 @@ export const gridCodeBlocks = {
 
     colCombo2Code: {
         code: `<div class="row">
-    <div class="phi-col-10"></div>
-    <div class="phi-col-8"></div>
-    <div class="phi-col-7"></div>
+    <div class="phi-col-2"></div>
+    <div class="phi-col-4"></div>
+    <div class="phi-col-5"></div>
 </div>`,
         language: 'html',
         isOutputVisible: true,
@@ -69,11 +69,11 @@ export const gridCodeBlocks = {
 
     colCombo3Code: {
         code: `<div class="row">
-        <div class="phi-col-10"></div>
-        <div class="phi-col-7"></div>
-        <div class="phi-col-6"></div>
-        <div class="phi-col-6"></div>
-        <div class="phi-col-5"></div>
+    <div class="phi-col-2"></div>
+    <div class="phi-col-5"></div>
+    <div class="phi-col-6"></div>
+    <div class="phi-col-6"></div>
+    <div class="phi-col-7"></div>
 </div>`,
         language: 'html',
         isOutputVisible: true,
@@ -91,10 +91,10 @@ export const gridCodeBlocks = {
 
     colCombo5Code: {
         code: `<div class="row">
-    <div class="phi-col-9"></div>
-    <div class="phi-col-8"></div>
-    <div class="phi-col-8"></div>
-    <div class="phi-col-7"></div>
+    <div class="phi-col-3"></div>
+    <div class="phi-col-4"></div>
+    <div class="phi-col-4"></div>
+    <div class="phi-col-5"></div>
 </div>`,
         language: 'html',
         isOutputVisible: true,
@@ -102,11 +102,11 @@ export const gridCodeBlocks = {
 
     colCombo6Code: {
         code: `<div class="row">
-    <div class="phi-col-7"></div>
-    <div class="phi-col-8"></div>
-    <div class="phi-col-8"></div>
-    <div class="phi-col-8"></div>
-    <div class="phi-col-7"></div>
+    <div class="phi-col-5"></div>
+    <div class="phi-col-4"></div>
+    <div class="phi-col-4"></div>
+    <div class="phi-col-4"></div>
+    <div class="phi-col-5"></div>
 </div>`,
         language: 'html',
         isOutputVisible: true,
@@ -114,10 +114,10 @@ export const gridCodeBlocks = {
 
     colCombo7Code: {
         code: `<div class="row justify-content-space-between">
-    <div class="phi-col-8"></div>
-    <div class="phi-col-8"></div>
-    <div class="phi-col-8"></div>
-    <div class="phi-col-8"></div>
+    <div class="phi-col-4"></div>
+    <div class="phi-col-4"></div>
+    <div class="phi-col-4"></div>
+    <div class="phi-col-4"></div>
 </div>`,
         language: 'html',
         isOutputVisible: true,
