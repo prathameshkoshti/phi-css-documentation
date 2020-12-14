@@ -22,7 +22,7 @@ export default function TypographyFeature() {
                 <h2>Typography</h2>
                 <p>
                     This framework supports fluid typography. Also,
-                    you can also utilize the typographical feature as per your requirement. Try any one of the following classes <code>.contrast-style-1</code> and <code>.contrast-style-2</code> in the editable textfield.
+                    you can also utilize the typographical feature as per your requirement. Try any one of the following classes <code>.contrast-style-1</code> and <code>.contrast-style-2</code> in the editable textfield and see the magic!
                 </p>
             </article>
             <article className="flex justify-content-center align-items-center">

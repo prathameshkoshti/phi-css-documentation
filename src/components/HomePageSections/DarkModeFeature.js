@@ -20,12 +20,17 @@ export default function DarkModeFeature() {
     transitionDelay: '0.6s',
   }
 
+  const codeAnimationSettings = {
+    transition: 'var(--transition)',
+    transitionDelay: '0.3s',
+  }
+
   return (
     <section className={className} style={animationSettings}>
       <article className="flex flex-column justify-content-center">
         <h2>Dark mode</h2>
         <p>
-          Phi also supports dark mode. It can be enabled within two steps. Checkout the <Link href="/docs/dark_mode"><a className="link link-primary">documentation</a></Link> for this. Import the CSS file and add the class <code>.dark</code> to the container the contianer will adapt to the dark mode.
+          Phi also supports dark mode. It can be enabled within two steps. Checkout the <Link href="/docs/dark_mode"><a className="link link-primary">documentation</a></Link> for this. Import the CSS file and add the class <code style={codeAnimationSettings}>.dark</code> to the container the contianer will adapt to the dark mode.
         </p>
       </article>
       <article className="flex justify-content-center align-items-center">
