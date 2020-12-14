@@ -1,0 +1,36 @@
+.miniCodeEditor {
+    background-color: #00214d;
+    width: 360px;
+    padding: var(--rem-mul-phi);
+    border-radius: var(--rem-div-phi);
+    font-family: var(--monospace-font);
+    border: 0;
+    font-size: 1.2em;
+}
+
+.miniCodeEditor code{
+    background-color: transparent;
+    padding: 0;
+}
+
+.defaultCodeStyle {
+    color: #ccc;
+}
+
+.tagStyle {
+    color: #ff6e75;
+}
+
+.attributeStyle {
+    color: #7efcfa;
+}
+
+
+.classInput {
+    width: 16.5ch;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #86f3b0;
+    color: #86f3b0;
+    outline: none;
+}

@@ -211,3 +211,9 @@
     font-weight: 900;
     font-style: italic;
 }
+
+@font-face {
+    font-family: 'Cookie';
+    src: url('/fonts/Cookie/Cookie-Regular.ttf') format("truetype");
+    font-weight: 300;
+}

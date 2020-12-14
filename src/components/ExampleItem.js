@@ -10,7 +10,7 @@ export default class ExampleItem extends Component {
         return (
             <a href={this.props.example.link} target="_blank" className={exampleStyles.example}>
                 <div className={exampleStyles.exampleContent}>
-                    <Image className={exampleStyles.exampleImage} src={`/images/examples/${this.props.example.image}`} width="100%" height="auto" layout="responsive"/>
+                    <Image className={exampleStyles.exampleImage} src={`/images/examples/${this.props.example.image}`} width="100%" height="auto" layout="responsive" quality="100"/>
                 </div>
                 <strong className={exampleStyles.exampleTitle}>
                     {this.props.example.title}
