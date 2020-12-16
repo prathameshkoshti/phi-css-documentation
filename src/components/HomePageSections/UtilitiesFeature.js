@@ -1,10 +1,11 @@
 import React from 'react'
+import Cogs from '../Cogs'
 
 export default function UtilitiesFeature() {
     return (
         <section>
-            <article>
-
+            <article className="flex justify-content-center align-items-center">
+                <Cogs />
             </article>
             <article className="flex flex-column justify-content-center">
                 <h3>Utilities</h3>

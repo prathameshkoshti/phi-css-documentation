@@ -33,7 +33,7 @@ export default function DarkModeFeature() {
 
   const animationSettings = {
     transition: 'var(--transition)',
-    transitionDelay: '0.6s',
+    transitionDelay: '0.3s',
   }
 
   const lightText = <p className="text-right">Phi supports light mode. It is the default mode. Tap/Click on the icon to switch to the dark mode.</p>;

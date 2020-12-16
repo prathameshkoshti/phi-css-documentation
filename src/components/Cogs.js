@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import animationData from '../utils/arrow.json';
+import animationData from '../utils/cogs.json';
 import lottie from "lottie-web";
 
-export default class Arrow extends Component {
+export default class Cogs extends Component {
     componentDidMount() {
         const rendererSettings = {};
 
@@ -28,13 +28,8 @@ export default class Arrow extends Component {
 
     render() {
         const darkModeTogglerStyle = {
-            width: '15rem',
-            height: '15rem',
-            position: 'absolute',
-            transform: 'rotate(200deg)',
-            right: '3rem',
-            bottom: '10rem',
-            // opacity: '0.5'
+            width: '25rem',
+            height: '25rem'
         }
         return (
             <div style={darkModeTogglerStyle} id="dark-mode-lottie">
