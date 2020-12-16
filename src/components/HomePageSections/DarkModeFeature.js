@@ -22,16 +22,34 @@ export default function DarkModeFeature() {
 
   const codeAnimationSettings = {
     transition: 'var(--transition)',
-    transitionDelay: '0.3s',
+    transitionDelay: '0.6s',
+  }
+
+  const lightText = <p className="text-right">Phi supports light mode. It is the default mode. Tap/Click on the icon to switch to the dark mode.</p>;
+
+  const darkText = <p className="text-right">
+  Phi also supports dark mode. You can enable it within two steps. Check out the <Link href="/docs/dark_mode"><a className="link link-secondary">documentation</a></Link> for this. You can use partial dark mode as well, as you can view this section utilizes the dark-mode, other sections don't! Click on the dark mode icon to switch to light mode.</p>;
+
+  let paragraphText = '';
+  let titleText = '';
+
+  if(className === 'dark') {
+    paragraphText = darkText;
+    titleText = 'Dark mode';
+  }
+  else {
+    paragraphText = lightText;
+    titleText = 'Light mode';
   }
 
   return (
+
     <section className={className} style={animationSettings}>
-      <article className="flex flex-column justify-content-center">
-        <h2>Dark mode</h2>
-        <p>
-          Phi also supports dark mode. It can be enabled within two steps. Checkout the <Link href="/docs/dark_mode"><a className="link link-primary">documentation</a></Link> for this. Import the CSS file and add the class <code style={codeAnimationSettings}>.dark</code> to the container the contianer will adapt to the dark mode.
-        </p>
+      <article className="flex flex-column justify-content-center align-items-end">
+        <div style={{minHeight: '270px'}}>
+          <h3 className="text-right">{titleText}</h3>
+          <p>{paragraphText}</p>
+        </div>
       </article>
       <article className="flex justify-content-center align-items-center">
         <DarkModeToggler toggleDarkMode={toggleDarkMode} />

@@ -3,7 +3,7 @@
 }
 
 .homepageContianer > section {
-    min-height: calc(100vh - 40px);
+    min-height: 100vh;
     padding: 5vw;
     display: flex;
 }
@@ -20,5 +20,13 @@
 
     .homepageContianer > section > article:last-child {
         margin-top: -100px;
+    }
+
+    .homepageContianer > section > article h3 {
+        text-align: center;
+    }
+
+    .homepageContianer > section > article p {
+        text-align: left;
     }
 }

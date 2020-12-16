@@ -10,7 +10,6 @@ export default class NavItem extends Component {
         if(subLink === this.props.currentActiveItem) {
             activeItemStyle = {
                 color: 'var(--accent)',
-                fontWeight: 600
             }
         }
 
@@ -21,7 +20,7 @@ export default class NavItem extends Component {
                         <a className="nav-logo">
                             <img height="60px" src="/icons/header-logo.svg" />
                         </a>) : (
-                        <a className="nav-item" onClick={() => this.props.handleNavMenu()} style={activeItemStyle} target={this.props.openInNewTab ? '_blank' : ''}>
+                        <a className={`nav-item ${subLink === this.props.currentActiveItem ? 'active' : ''}`} onClick={() => this.props.handleNavMenu()} target={this.props.openInNewTab ? '_blank' : ''}>
                             {this.props.title}
                         </a>)
                 }

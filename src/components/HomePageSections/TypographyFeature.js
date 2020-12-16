@@ -18,13 +18,6 @@ export default function TypographyFeature() {
     }
     return (
         <section className="">
-            <article className={`flex flex-column justify-content-center ${className}`}>
-                <h2>Typography</h2>
-                <p>
-                    This framework supports fluid typography. Also,
-                    you can also utilize the typographical feature as per your requirement. Try any one of the following classes <code>.contrast-style-1</code> and <code>.contrast-style-2</code> in the editable textfield and see the magic!
-                </p>
-            </article>
             <article className="flex justify-content-center align-items-center">
                 <pre className={miniCodeEditorStyles.miniCodeEditor}>
                     <code className={miniCodeEditorStyles.defaultCodeStyle}>
@@ -47,6 +40,12 @@ export default function TypographyFeature() {
                         </div>
                     </code>
                 </pre>
+            </article>
+            <article className={`flex flex-column justify-content-center ${className}`}>
+                <h3>Typography</h3>
+                <p>
+                This framework supports fluid typography (try resizing this window if you are using a desktop browser). Also, you can utilize the contrasting typographical feature as per your requirement. Try any one of the following classes <code>.contrast-style-1</code> and <code>.contrast-style-2</code> in the editable text field and see the magic!
+                </p>
             </article>
         </section>
     )
