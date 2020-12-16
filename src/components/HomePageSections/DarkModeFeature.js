@@ -20,11 +20,6 @@ export default function DarkModeFeature() {
     transitionDelay: '0.6s',
   }
 
-  const codeAnimationSettings = {
-    transition: 'var(--transition)',
-    transitionDelay: '0.6s',
-  }
-
   const lightText = <p className="text-right">Phi supports light mode. It is the default mode. Tap/Click on the icon to switch to the dark mode.</p>;
 
   const darkText = <p className="text-right">
@@ -48,7 +43,7 @@ export default function DarkModeFeature() {
       <article className="flex flex-column justify-content-center align-items-end">
         <div style={{minHeight: '270px'}}>
           <h3 className="text-right">{titleText}</h3>
-          <p>{paragraphText}</p>
+          {paragraphText}
         </div>
       </article>
       <article className="flex justify-content-center align-items-center">
