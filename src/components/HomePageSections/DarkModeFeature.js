@@ -1,17 +1,33 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import DarkModeToggler from '../DarkModeToggler';
+import { motion } from 'framer-motion';
 
 export default function DarkModeFeature() {
 
   const [className, setClassName] = useState('dark');
+  const [visibility, setVisibility] = useState(true);
+  // const opacity = useMotionValue(0);
 
   const toggleDarkMode = () => {
-    if (className === '') {
-      setClassName('dark');
-    }
-    else {
-      setClassName('');
+    setVisibility(false)
+    setTimeout(() => {
+      setVisibility(true)
+      if (className === '') {
+        setClassName('dark');
+      }
+      else {
+        setClassName('');
+      }
+    }, 300);
+  }
+
+  const variants = {
+    invisible: {
+      opacity: 0
+    },
+    visible: {
+      opacity: 1
     }
   }
 
@@ -41,10 +57,16 @@ export default function DarkModeFeature() {
 
     <section className={className} style={animationSettings}>
       <article className="flex flex-column justify-content-center align-items-end">
-        <div style={{minHeight: '270px'}}>
+        <motion.div
+          style={{minHeight: '270px'}}
+          initial={visibility ? 'visible' : 'invisible'}
+          animate={visibility ? 'visible' : 'invisible'}
+          transition={{duration: 0.3}}
+          variants={variants}
+        >
           <h3 className="text-right">{titleText}</h3>
           {paragraphText}
-        </div>
+        </motion.div>
       </article>
       <article className="flex justify-content-center align-items-center">
         <DarkModeToggler toggleDarkMode={toggleDarkMode} />
