@@ -36,10 +36,10 @@ export default function DarkModeFeature() {
     transitionDelay: '0.3s',
   }
 
-  const lightText = <p className="text-right">Phi supports light mode. It is the default mode. Tap/Click on the icon to switch to the dark mode.</p>;
+  const lightText = <p className="text-right">Phi supports light mode. It is the default mode. You can enable it within two steps. Check out the <Link href="/docs/dark_mode"><a className="link link-secondary">documentation</a></Link> for this. You can use partial dark mode as well, as you can view this section utilizes the dark-mode, other sections don't! Tap or Click on the icon to switch to the dark mode.</p>;
 
   const darkText = <p className="text-right">
-  Phi also supports dark mode. You can enable it within two steps. Check out the <Link href="/docs/dark_mode"><a className="link link-secondary">documentation</a></Link> for this. You can use partial dark mode as well, as you can view this section utilizes the dark-mode, other sections don't! Click on the dark mode icon to switch to light mode.</p>;
+  Phi also supports dark mode. You can enable it within two steps. Check out the <Link href="/docs/dark_mode"><a className="link link-secondary">documentation</a></Link> for this. You can use partial dark mode as well, as you can view this section utilizes the dark-mode, other sections don't! Tap or Click on the dark mode icon to switch to light mode.</p>;
 
   let paragraphText = '';
   let titleText = '';
