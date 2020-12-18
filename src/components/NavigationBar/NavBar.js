@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavItem from './NavItem';
 import { navItems } from '../../utils/siteData';
+import HamburgerMenu from '../HamburgerMenu/index';
 
 export default class NavBar extends Component {
     constructor() {
@@ -54,13 +55,11 @@ export default class NavBar extends Component {
             }
         }
         return (
-            <nav className="phi-full-width">
+            <nav className="phi-full-width navbar">
                 <NavItem name="" link="/" type="logo" />
                 <div className="nav-links-container flex justify-content-space-between align-items-center">
-                    <div className="hamburger-btn" onClick={this.handleNavMenu}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div className="hamburger-btn">
+                        <HamburgerMenu />
                     </div>
                     <div className="nav-links" style={navMenuStyle}>
                     {

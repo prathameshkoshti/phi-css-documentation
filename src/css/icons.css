@@ -31,26 +31,3 @@
 .chevron-down.active::after {
     border-color: var(--accent);
 }
-
-/* hamburger-icom */
-.hamburger-btn {
-    width: 23px;
-    height: 17px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    visibility: hidden;
-    cursor: pointer;
-}
-
-.hamburger-btn > span {
-    width: 100%;
-    height: 2px;
-    background-color: var(--light);
-}
-
-@media screen and (max-width: 830px) and (min-width: 320px) {
-    .hamburger-btn {
-        visibility: visible;
-    }
-}

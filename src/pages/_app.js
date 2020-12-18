@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import 'phi-css/dist/phi.min.css';
 import 'phi-css/dist/phi-dark.min.css';
 import '../css/font.css';
+import '../css/vertical-navigation.css';
 import '../css/docs.css';
 import '../css/icons.css';
 import "../css/prism.css";

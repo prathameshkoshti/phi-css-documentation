@@ -1,0 +1,84 @@
+.vertical-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+}
+
+.vertical-nav a {
+    text-decoration: none;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    pointer-events: none;
+    -x-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+button {
+    outline: none;
+    border: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 52px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.vertical-nav ul,
+.vertical-nav-item {
+    margin: 0;
+    padding: 0;
+}
+
+.vertical-nav ul {
+    position: absolute;
+    bottom: calc(var(--rem-mul-phi) * 5);
+    right: calc(var(--rem-div-phi) * 1);
+    padding: var(--rem-div-phi);
+    pointer-events: none;
+}
+
+.vertical-nav-item {
+    list-style: none;
+    margin: var(--rem-mul-phi) var(--rem-div-phi);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: var(--rem-mul-phi);
+    display: flex;
+    pointer-events: initial;
+    justify-content: flex-end;
+}
+
+.vertical-nav-item span {
+    text-decoration: none;
+}
+
+.refresh {
+    padding: 10px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+

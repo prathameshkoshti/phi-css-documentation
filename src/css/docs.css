@@ -442,6 +442,10 @@ footer {
         display: flex !important;
         height: 60px;
     }
+
+    .hamburger-btn {
+        display: none;
+    }
 }
 
 @keyframes strikethrough {
