@@ -22,8 +22,8 @@ const variants = {
 
 export const MenuItem = ({ i, toggle}) => {
     return (
-        <Link href={navItems[i].link} target={navItems[i].openInNewTab ? '_blank' : ''}>
-            <a className="link link-secondary" onClick={toggle}>
+        <Link href={navItems[i].link}>
+            <a className="link link-secondary" onClick={toggle} target={navItems[i].openInNewTab ? '_blank' : ''}>
                 <motion.li
                     variants={variants}
                     whileHover={{ scale: 1.1 }}
