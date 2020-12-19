@@ -21,9 +21,9 @@ export default function index() {
                 delay: 0.5,
                 type: "spring",
                 stiffness: 350,
-                damping: 40
+                damping: 35
             },
-            background: 'var(--accent-tint)',
+            background: 'var(--accent)',
         }
     };
 
