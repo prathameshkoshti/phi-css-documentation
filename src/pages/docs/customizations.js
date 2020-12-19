@@ -2,6 +2,7 @@ import React from 'react';
 import PrismCodeBlock from '../../components/PrismCodeBlock';
 import CommonDocsLayout from '../../components/CommonDocsLayout';
 import { customizationsCodeBlocks } from '../../utils/codeBlocks';
+import { customizationTable } from '../../utils/customizationTableData';
 import Link from 'next/link';
 
 export default function customizations() {
@@ -9,7 +10,40 @@ export default function customizations() {
         <CommonDocsLayout currentPageId="customizations" pageHeader="Customizations">
             <section>
                 <p>
-                    If you want to do some customizations to the framework, such as changing the color codes, changing the font families, changing the phi values then you can also do the changes to other sass files if you are confident about it. Follow the following steps to customize the framework.
+                    If you wish you can use the parts of the framework, if you want to utilize the grid but not interested in other features, then you need to import <code>grid.min.css</code> or <code>grid.css</code>. Similarly, the whole framework is modularized, so based on the requirement, you can pull up the CSS file you need. Below table represents what is included in the CSS files which are provided by this framework.
+                </p>
+                <table className="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Module
+                            </th>
+                            <th>
+                                File
+                            </th>
+                            <th>
+                                Feature
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            customizationTable.map(row => {
+                                return (
+                                    <tr>
+                                        <td>{row.name}</td>
+                                        <td>{row.file}</td>
+                                        <td>{row.feature}</td>
+                                    </tr>
+                                )
+                            })
+                        }
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <p>
+                    If you want to do more customizations to the framework, such as changing the color codes, changing the font families, changing the phi values then you can also do the changes to other sass files if you are confident about it. Follow the following steps to customize the framework.
                 </p>
             </section>
             <section>
