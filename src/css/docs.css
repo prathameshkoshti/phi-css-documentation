@@ -278,6 +278,40 @@ footer {
 }
 
 /* home page section styles */
+.landing-page-section {
+    background: rgb(47,39,96);
+    background: linear-gradient(60deg, rgba(204,196,253,1), rgba(122,101,251,1));
+    color: var(--light);
+}
+
+.landing-page-section .glass-effect {
+    background-color: #ffffff30;
+    max-width: 640px;
+    flex: 1 1 680px;
+    min-height: 400px;
+    padding: calc(var(--rem-mul-phi) + var(--rem-div-phi));
+}
+
+.landing-page-section .heading {
+    margin-bottom: calc(var(--rem-mul-phi) * 2);
+}
+
+.landing-page-section .heading h2 {
+    margin-bottom: 0rem;
+    line-height: 1;
+}
+
+a.get-started {
+    text-decoration: none;
+    margin-left: 0;
+}
+
+.zdog-logo {
+    display: flex;
+    justify-content: center;
+    flex: 1
+}
+
 .buy-me-a-coffee-section {
     background-color: var(--accent-tint);
     color: var(--accent-shade);
@@ -401,6 +435,15 @@ footer {
     .tint > div {
         right: 37%;
         bottom: 2rem;
+    }
+
+    .landing-page-section > article > .glass-effect {
+        max-width: 100%;
+    }
+
+    .zdog-logo {
+        position: absolute;
+        top: 0;
     }
 }
 
