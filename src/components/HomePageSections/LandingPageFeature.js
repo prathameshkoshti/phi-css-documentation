@@ -46,8 +46,10 @@ export default function LandingPageFeature() {
         <section className="landing-page-section">
             <article className="flex align-items-center justify-content-space-between">
                 <div className="zdog-logo">
-                    <canvas class="zdog-canvas" width="320" height="480"></canvas>
+                    <canvas className="zdog-canvas" width="320" height="480"></canvas>
                 </div>
+            </article>
+            <article className="flex align-items-center justify-content-center">
                 <div className="glass-effect">
                     <div className="heading">
                         <h2>
