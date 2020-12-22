@@ -71,6 +71,12 @@ export default function LandingPageFeature() {
                     </div>
                 </div>
             </article>
+            <div className="background-collection">
+                <div className="div-1"></div>
+                <div className="div-2"></div>
+                <div className="div-3"></div>
+                <div className="div-4"></div>
+            </div>
         </section>
     )
 }

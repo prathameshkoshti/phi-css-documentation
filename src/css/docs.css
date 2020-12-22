@@ -7,6 +7,16 @@ body {
     color: var(--dark);
 }
 
+:root {
+    --size: 200px;
+    --top: initial;
+    --left: initial;
+    --bottom: initial;
+    --right: initial;
+    --scale: 1;
+    --rotate: 0deg;
+}
+
 .content {
     position: relative;
     min-height: 100vh;
@@ -281,6 +291,7 @@ footer {
 .landing-page-section {
     background: linear-gradient(60deg, rgba(204,196,253,1), rgba(122,101,251,1));
     color: var(--light);
+    overflow: hidden;
 }
 
 .landing-page-section .glass-effect {
@@ -288,6 +299,11 @@ footer {
     flex: 1 1 680px;
     min-height: 400px;
     padding: calc(var(--rem-mul-phi) + var(--rem-div-phi));
+}
+
+.landing-page-section > article {
+    z-index: 1;
+    position: relative;
 }
 
 .landing-page-section .heading {
@@ -323,16 +339,64 @@ a.get-started {
 .glass-effect {
     padding: calc(var(--rem-mul-phi) + var(--rem-div-phi)) var(--rem-mul-phi);
     background: #ffffff70;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
     border: 1px solid;
     border-image: linear-gradient(to bottom right, #ffffff80, transparent,#ffffff30) 30;
     overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
 
 .my-image {
     overflow: hidden;
     border-radius: 50%;
     margin-bottom: var(--rem-mul-phi);
+}
+
+.background-collection {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: initial;
+    overflow: hidden;
+}
+
+.background-collection > div {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    top: var(--top);
+    bottom: var(--bottom);
+    left: var(--left);
+    right: var(--right);
+    transform: scale(var(--scale)) rotate(var(--rotate));
+    border-radius: 50%;
+    background: linear-gradient(60deg, rgba(204,196,253,1), rgba(122,101,251,1));
+}
+
+.div-1 {
+    --rotate: 45deg;
+    --scale: 1.5;
+}
+
+.div-2 {
+    --scale: 0.4;
+    --top: 50vh;
+    --rotate: 45deg;
+}
+
+.div-3 {
+    --scale: 2;
+    --top: 70vh;
+    --right: 20vw;
+}
+
+.div-4 {
+    --scale: 1;
+    --rotate: 60deg;
+    --top: 20vh;
+    --right: 10vw;
 }
 
 @media screen and (max-width: 1990px) {
