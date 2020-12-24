@@ -31,8 +31,8 @@ export default class Arrow extends Component {
             width: '15rem',
             height: '15rem',
             position: 'absolute',
-            transform: 'rotate(200deg)',
-            right: '3rem',
+            transform: 'rotateX(180deg) rotateZ(20deg)',
+            left: '4rem',
             bottom: '10rem',
             // opacity: '0.5'
         }

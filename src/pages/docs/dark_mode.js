@@ -25,7 +25,7 @@ export default function dark_mode() {
                     Generally, dark mode is enabled for the whole page. But if you have any specific requirement, then you can enable it to any specific section or any div by adding the <code>.dark</code> class in the class list of that particular element, this way:
                 </p>
                 <PrismCodeBlock codeBlock={darkModeCodeBlocks.divClassCodeBlock} />
-                <p>Want to see how it actually looks in action, head over to this <Link href=""><a className="link link-primary">website</a></Link>.</p>
+                <p>Want to see how it actually looks in action, head over to this <Link href="https://codepen.io/phi-css/pen/ExgwJvX"><a className="link link-primary">link</a></Link>.</p>
             </section>
         </CommonDocsLayout>
     )

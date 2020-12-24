@@ -7,6 +7,11 @@ export default class Footer extends Component {
         return (
             <footer className="footer phi-full-width justify-content-space-between align-items-center">
                 <span>built with 💜 using SASS.</span>
+                <Link href="/idea">
+                    <a className="link-footer">
+                        The idea
+                    </a>
+                </Link>
                 <div className="footer-icons">
                     <Link href={npmLink}>
                         <a target="_blank" className="footer-icon">

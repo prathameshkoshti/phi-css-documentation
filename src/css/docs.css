@@ -253,6 +253,20 @@ footer {
     overflow: hidden;
 }
 
+.link-footer {
+    color: var(--light);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link-footer:hover {
+    text-decoration: underline;
+}
+
+.idea-container {
+    padding-top: 5rem;
+}
+
 .note {
     background: var(--warning-tint);
     padding: var(--rem-div-phi) var(--rem-mul-phi);
@@ -327,7 +341,7 @@ a.get-started {
 }
 
 .buy-me-a-coffee-section {
-    background: linear-gradient(-60deg, rgba(204,196,253,1), rgba(122,101,251,1));
+    background: linear-gradient(60deg, rgba(204,196,253,1), rgba(122,101,251,1));
     color: var(--accent-shade);
 }
 

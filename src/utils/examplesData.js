@@ -21,7 +21,7 @@ const examples = [
         id: 'dark_mode',
         title: 'Dark mode',
         image: 'dark_mode.png',
-        link: 'https://codepen.io/phi-css/pen/'
+        link: 'https://codepen.io/phi-css/pen/ExgwJvX'
     },
     {
         id: 'full_width_banner',
