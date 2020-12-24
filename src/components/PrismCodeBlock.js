@@ -7,7 +7,6 @@ export default class PrismCodeBlock extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            language: this.props.language,
             codeBlock: this.props.codeBlock,
             copyText: 'Copy',
             copied: false,

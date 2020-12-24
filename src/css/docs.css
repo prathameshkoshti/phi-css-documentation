@@ -265,6 +265,15 @@ footer {
 
 .idea-container {
     padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.idea-container > section {
+    margin-bottom: 5rem;
+}
+
+.idea-container > section > .code-block-contianer{
+    margin: var(--rem-mul-phi)0;
 }
 
 .note {

@@ -70,7 +70,7 @@ pre[class*="language-"] {
 }
 
 .token {
-	font-family: 'Fira Code', monospace;
+	font-family: 'Fira Code', monospace !important;
 }
 
 .token.comment,
@@ -189,6 +189,7 @@ pre > code {
 	cursor: pointer;
 	transition: var(--transition);
 	font-weight: 500;
+	font-family: var(--sans-serif-font) !important;
 }
 
 .code-block-copy:hover {

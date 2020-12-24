@@ -580,3 +580,31 @@ $monospaceFont: "Fira Code", Courier, monospace;`,
         isOutputVisible: false,
     }
 }
+
+export const ideaCodeBlocks = {
+    baseVariablesCodeBlock: {
+        code: `$phi: 1.618;
+$remMulPhi: 1rem * $phi
+$remDivPhi: 1rem / $phi`,
+        language: 'css',
+        isOutputVisible: false,
+    },
+
+    gridGenerationCodeBlock: {
+        code: `$base: 100%; /* classes: .phi-col-base and .phi-col-0 */
+$phiCol2: $base / $phi; /* classes: .phi-col-lg and .phi-col-2 */
+$phiCol3: $base - $phiCol2; /* classes: .phi-col-md and .phi-col-3 */
+$phiCol4: $phiCol3 / $phi; /* classes: .phi-col-sm and .phi-col-4 */
+$phiCol5: $phiCol3 - $phiCol4; /* classes: .phi-col-xs and .phi-col-5 */
+$phiCol6: $phiCol5 / $phi; /* class: .phi-col-6 */
+$phiCol7: $phiCol5 - $phiCol6; /* class: .phi-col-7 */`,
+        language: 'css',
+        isOutputVisible: false,
+    },
+
+    col1GenerationCodeBlock: {
+        code: `$phiCol1: $base - ($phiCol6 + $phiCol6); /* classes: .phi-col-xl and .phi-col-1 */`,
+        language: 'css',
+        isOutputVisible: false,
+    }
+}
