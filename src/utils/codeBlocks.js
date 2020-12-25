@@ -606,5 +606,22 @@ $phiCol7: $phiCol5 - $phiCol6; /* class: .phi-col-7 */`,
         code: `$phiCol1: $base - ($phiCol6 + $phiCol6); /* classes: .phi-col-xl and .phi-col-1 */`,
         language: 'css',
         isOutputVisible: false,
-    }
+    },
+
+    headersCodeBlock: {
+        code: `$h5: 1rem;
+$h4: $h5 * $phi;
+$h3: $h4 * $phi;
+$h2: $h3 * $phi;
+$h1: $h2 * $phi;
+$h6: $h5 / $phi;`,
+        language: 'css',
+        isOutputVisible: false,
+    },
+
+    fluidTypographyCodeBlock: {
+        code: `font-size: calc(14px + (16 - 14) * ((100vw - 360px) / (1440 - 320)));`,
+        language: 'css',
+        isOutputVisible: false,
+    },
 }
