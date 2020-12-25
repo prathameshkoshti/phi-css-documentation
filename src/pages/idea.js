@@ -65,6 +65,22 @@ export default function idea() {
                     The fluid typography feature is <s>inspired</s> stolen from <Link href="https://css-tricks.com/snippets/css/fluid-typography/"><a className="link link-primary">CSS tricks</a></Link>. You can read the article to know more about it.
                 </p>
             </section>
+            <section>
+                <h4>
+                    Colors
+                </h4>
+                <p>
+                    The standard colors in the framework are defined and then using those standard colors with <code>$phi</code>, tints and shades are generated using the mix function from SASS.
+                </p>
+                <p>
+                    The function for the tint and shade is defined like this in <code>_.function.scss</code>. The tint function is mixes the white color in the provided standard color (first parameter) depending on the percentage provided as the second parameter.
+                </p>
+                <PrismCodeBlock codeBlock={ideaCodeBlocks.tintColorCodeBlock} />
+                <p>
+                    Similarly, for shade color it is defined in the following way. This function mixes the black color in the provided color through the parameter depending on the percentage provided in the second parameter.
+                </p>
+                <PrismCodeBlock codeBlock={ideaCodeBlocks.shadeColorCodeBlock} />
+            </section>
         </div>
     )
 }

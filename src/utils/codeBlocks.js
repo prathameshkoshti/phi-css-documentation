@@ -624,4 +624,20 @@ $h6: $h5 / $phi;`,
         language: 'css',
         isOutputVisible: false,
     },
+
+    tintColorCodeBlock: {
+        code: `@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}`,
+        language: 'css',
+        isOutputVisible: false,
+    },
+
+    shadeColorCodeBlock: {
+        code: `@function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+}`,
+        language: 'css',
+        isOutputVisible: false,
+    }
 }
