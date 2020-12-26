@@ -65,7 +65,7 @@ export default function LandingPageFeature() {
                         </div>
                         <Link href="/docs/inception">
                             <a className="button button-primary get-started">
-                                Get stated
+                                Get started
                             </a>
                         </Link>
                     </div>
