@@ -40,7 +40,7 @@ export default function index() {
             className="vertical-nav"
         >
             <motion.div className="background" variants={sidebar} />
-            <Navigation toggle={() => toggleOpen()} />
+            <Navigation isOpen={isOpen} toggle={() => toggleOpen()} />
             <MenuToggle toggle={() => toggleOpen()} />
         </motion.div>
     )

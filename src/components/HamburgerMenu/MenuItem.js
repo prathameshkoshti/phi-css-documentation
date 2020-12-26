@@ -20,18 +20,21 @@ const variants = {
   }
 };
 
-export const MenuItem = ({ i, toggle}) => {
+export const MenuItem = ({ i, toggle, isOpen }) => {
     return (
         <Link href={navItems[i].link}>
-            <a className="link link-secondary" onClick={toggle} target={navItems[i].openInNewTab ? '_blank' : ''}>
+            <a className="link link-secondary" onClick={toggle} style={{pointerEvents: isOpen ? 'initial' : 'none'}} target={navItems[i].openInNewTab ? '_blank' : ''}>
                 <motion.li
                     variants={variants}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     className="vertical-nav-item"
-                    style={{color: 'var(--accent-shade)'}}
+                    style={{
+                      color: 'var(--accent-shade)',
+                      pointerEvents: isOpen ? 'initial' : 'none'
+                    }}
                 >
-                    <span className="vertical-nav-item">{navItems[i].title}</span>
+                    <span className="vertical-nav-item" style={{pointerEvents: isOpen ? 'initial' : 'none'}}>{navItems[i].title}</span>
                 </motion.li>
             </a>
         </Link>

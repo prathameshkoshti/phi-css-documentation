@@ -11,10 +11,10 @@ const variants = {
   }
 };
 
-export const Navigation = ({toggle}) => (
-  <motion.ul variants={variants}>
+export const Navigation = ({ toggle, isOpen }) => (
+  <motion.ul variants={variants} style={{pointerEvents: isOpen ? 'initial' : 'none'}}>
     {itemIds.map(i => (
-      <MenuItem i={i} key={i} toggle={toggle} />
+      <MenuItem isOpen={isOpen} i={i} key={i} toggle={toggle} />
     ))}
   </motion.ul>
 );
