@@ -38,8 +38,9 @@ export default function index() {
             custom={height}
             ref={containerRef}
             className="vertical-nav"
+            style={{pointerEvents: isOpen ? 'intital' : 'none'}}
         >
-            <motion.div className="background" variants={sidebar} />
+            <motion.div style={{pointerEvents: isOpen ? 'intital' : 'none'}} className="background" variants={sidebar} />
             <Navigation isOpen={isOpen} toggle={() => toggleOpen()} />
             <MenuToggle toggle={() => toggleOpen()} />
         </motion.div>

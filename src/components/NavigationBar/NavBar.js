@@ -58,9 +58,7 @@ export default class NavBar extends Component {
             <nav className="phi-full-width navbar">
                 <NavItem name="" link="/" type="logo" />
                 <div className="nav-links-container flex justify-content-space-between align-items-center">
-                    <div className="hamburger-btn">
-                        <HamburgerMenu />
-                    </div>
+                    <HamburgerMenu />
                     <div className="nav-links" style={navMenuStyle}>
                     {
                         navItems.map(navItem => <NavItem handleNavMenu={this.handleNavMenu} currentActiveItem={this.state.currentActiveItem} title={navItem.title} link={navItem.link} key={navItem.title} type="link" openInNewTab={navItem.openInNewTab} />)
