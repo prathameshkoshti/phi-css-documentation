@@ -13,7 +13,7 @@ export default function BuyMeACoffee() {
                         <Image className="my-image" src="/images/prathamshkoshti.png" alt="Prathamesh Koshti" width="100px" height="100px" />
                     </div>
                     <p className="text-center">
-                        Hey! I am <a href="https://prathameshkoshti.com/" className="link link-primary"><strong>Prathamesh Koshti</strong></a>. I'm the creator of this CSS framework, created this framework in my free time. I work as a full-time front end developer. If you do like <Link href="/idea"><a className="link link-primary"><strong>the idea</strong></a></Link> behind this framework, you can consider buying me a coffee, would be much helpful for me to maintain this project in future.
+                        Hey! I am <a href="https://prathameshkoshti.com/" className="link link-primary"><strong>Prathamesh Koshti</strong></a>. I'm the creator of this CSS framework, created this framework in my free time. I work as a full-time front end developer. If you do like <Link href="/idea"><a className="link link-primary"><strong>the idea</strong></a></Link> behind this framework, you can consider <a href="https://www.buymeacoffee.com/prathameshkoshti" target="_blank" className="link link-primary">buying me a coffee </a>, would be much helpful for me to maintain this project in future.
                     </p>
                 </div>
             </article>
